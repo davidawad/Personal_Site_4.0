@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+<title>My Leaflet App</title>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<link rel="icon" href="/images/favreaucon.png" type="image/png">
+<meta property="og:title" content="Stuff With Maps | Need ideas..."/>
+<meta property="og:image" content="http://sia.github.io/images/mapfb.png" />
+<meta property="og:site_name" content="Maps!"/>
+<meta property="og:description" content="My Leaflet.js attempt. I don't know... I guess you can make a game out of this. Not sure what to do."/>
+<meta property="og:url" content="http://sia.github.io/map"/>
+<meta name="wot-verification" content="7e897864f806e7457ad5"/><!--Do i need this?-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/mapsturl.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+<div id="smapText" class="smapText">
+
+    <button id="mapbutton" title="Random Color on every mousemove and Refresh.">INSTRUCTIONS</button>
+</div><!--End of the html, links, non threejs, essentially the website, in a div zindex > than threejs-->
+
+  <div id="map2" class="map2">
+    <div id="map" class="map"></div>
+  </div>
+
+  <div id="smapText2" class="smapText2" style="z-index: 49; display: none; top: 20px">
+    <p>There's not much here right now... Click the leaf twice it'll send you to the</p>
+    <p>Leaflet homepage... Unless a popup blocker stops it, usually in mozilla.</p>
+    <p>Press 'I' when on the map to see the location of your current IP address!</p>
+    <a id="homelink" class="homelink" href="http://sia.github.io" target="_blank">sia.github.io</a>
+  </div>
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+  <script src="leaflet-plugins/leaflet-geoip-master/leaflet-geoip.js"></script>
+  <script><!-- Leaflet script -->
+  var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+  '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+  'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+  mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
+
+  var yourLoc = new L.LayerGroup();//for IP loc.
+  var cities = new L.LayerGroup();
+  L.marker([39.77, -105.23]).bindPopup('This is Golden, CO.').addTo(cities);
+
+  var mapOSM = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'});
+
+  streets = L.tileLayer(mbUrl, {id: 'examples.map-i86knfo3',   attribution: mbAttr});
+
+  var map = L.map('map', {
+  center: [39.73, -104.99],
+  zoom: 10,
+  layers: [mapOSM, cities, yourLoc]
+  });
+
+  var tobIconG= L.icon({ iconUrl: 'images/tobicon-green.png', shadowUrl: 'images/tobicon-shadow.png',//minimized space IP-tobicon code
+  iconSize:[35, 47],shadowSize:[25, 32],iconAnchor:[22, 94],shadowAnchor:[9, 79],popupAnchor:[-3, -76]});
+
+  //IP address stuff
+  var pos = L.GeoIP.getPosition();
+  //L.GeoIP.centerMapOnPosition(map);//center on IP address
+  //OR var ip = "13.15.13.15";//for any IP
+  //var pos = L.GeoIP.getPosition(ip);
+  L.marker(pos, {icon: tobIconG}).addTo(map).bindPopup("<b>This is approximately where you live.</b><br/>Unless you're using mobile data...").addTo(yourLoc);;//Puts a Tobias head on your IP address.
+
+  var baseLayers = {
+  "Pretty Sweet Map": mapOSM,
+  "Streets": streets
+  };
+
+  var overlays = {
+  "Your Location": yourLoc,
+  "Cities": cities
+  };
+
+  L.control.layers(baseLayers, overlays).addTo(map);
+
+  map = map.setView([40.5221, -74.46252], 18);
+
+  L.marker([40.5221, -74.46252]).addTo(map)
+  .bindPopup("<b>Hello User!</b><br />I am a popup...").openPopup();
+
+  L.circle([40.5221, -74.4629], 10, {
+  color: 'green',
+  fillColor: '#f09',
+  fillOpacity: 0.4
+  }).addTo(map).bindPopup("I am a random circle.");
+
+  var redIcon= L.icon({
+  iconUrl: 'images/leaf-red.png',
+  shadowUrl: 'images/leaf-shadow.png',
+
+  iconSize:     [38, 95], // size of the icon
+  shadowSize:   [50, 64], // size of the shadow
+  iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+  shadowAnchor: [4, 62],  // the same for the shadow
+  popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+  });
+
+  var tobIcon= L.icon({
+  iconUrl: 'images/tobicon.png',
+  shadowUrl: 'images/tobicon-shadow.png',
+
+  iconSize:     [35, 47], // size of the icon
+  shadowSize:   [25, 32], // size of the shadow
+  iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+  shadowAnchor: [9, 79],  // the same for the shadow
+  popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+  });
+
+  L.marker([40.5221, -74.462], {icon: redIcon}).addTo(map).bindPopup("<b>This is a leaf</b><br/>");
+  L.marker([40.5221, -74.461], {icon: tobIcon}).addTo(map).bindPopup("<b>This is Tobias</b><br/>He's a good sport.");
+  L.marker([40.5220, -74.458], {icon: tobIcon}).addTo(map).bindPopup("<b>This is Tobias</b><br/>");
+  L.marker([40.5216, -74.461], {icon: tobIcon}).addTo(map).bindPopup("<b>This is Tobias</b><br/>");
+
+  var popup = L.popup();
+
+  function GoTo(lat, lng, zoom)
+  { 
+  map.setView(new L.LatLng(lat, lng), zoom);
+  }
+
+  document.onkeydown = function (e) {
+  console.log(e.keyCode);
+  if(e.keyCode == '73') GoTo(pos.lat,pos.lng,17);
+  };
+
+  function onMapClick(e) {
+  popup
+  .setLatLng(e.latlng)
+  .setContent("You clicked the map at " + e.latlng.toString())
+  .openOn(map);
+  }
+  map.on('click', onMapClick);
+  </script>
+
+  <script> <!--unorganized javascript -->
+  var flag = 0;
+
+  $(document).ready(function(){
+  $("#mapbutton").click(function(){
+  console.log("make clickmesh appear");
+  $("#map").toggle('fast');
+  $("#smapText2").toggle('fast');});});
+
+  function changeColor() { //for random color of button mouseover
+  if(flag ==0){
+  flag = 1;
+  return '#FF3561';
+  }else{ flag = 0; return '#AF35FF';}}
+
+  $("#mapbutton").click(function() {
+  $(this).css("background-color",changeColor()); });
+
+  $(".map").css('opacity','0.75');
+  $(document).ready(function(){
+  $(".map2").hover(
+  function() {
+  $(this).find(".map").stop().animate({ opacity: 1 });
+  },
+  function() {
+  $(this).find(".map").stop().animate({ opacity: 0.75 });});});
+  </script><!--unorganized javascript -->
+
+<script src="js/Three.js"></script>
+<script src="js/Detector.js"></script>
+<script src="js/Stats.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/THREEx.KeyboardState.js"></script>
+<script src="js/THREEx.FullScreen.js"></script>
+<script src="js/THREEx.WindowResize.js"></script>
+<!--Imported three.js lib files, may need to update-->
+<div id="ThreeJS"></div>
+
+<script><!--Three.js-->
+//global variables
+var container, scene, camera, renderer, controls, stats;
+var keyboard = new THREEx.KeyboardState();
+var clock = new THREE.Clock();
+var sphere3;
+var sphereSize = 0.25;
+var cubeSize = 0.25;
+var sprite;
+var cr = 0.01;
+var cubeCtr=0;
+
+var video = document.getElementsByTagName('video')[0];
+var i = 0;
+
+var targets = [];
+var projector, mouse = {x: 0, y: 0}, clickCube;
+
+init();
+animate();
+function init() 
+{
+scene = new THREE.Scene();
+
+var SCREEN_WIDTH = window.innerWidth, SCREEN_HEIGHT = window.innerHeight;	
+var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 2000;
+camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
+scene.add(camera);
+camera.position.set(0,150,-600);
+camera.lookAt(scene.position);	
+
+//Renderer create and start the renderer; choose antialias setting.
+if ( Detector.webgl )
+renderer = new THREE.WebGLRenderer( {antialias:true} );
+else
+renderer = new THREE.CanvasRenderer(); 
+
+renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+
+// attach div element to variable to contain the renderer
+container = document.getElementById( 'ThreeJS' );
+// alternatively: to create the div at runtime, use:
+//   container = document.createElement( 'div' );
+//    document.body.appendChild( container );
+// attach renderer to the container div
+container.appendChild( renderer.domElement );
+THREEx.WindowResize(renderer, camera);
+controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+var leafletLogo = THREE.ImageUtils.loadTexture( 'images/leaflet-logo.png' );
+var leafletMaterial = new THREE.SpriteMaterial( { map: leafletLogo, useScreenCoordinates: false,transparent: true, opacity: 0.7} );
+
+sprite = new THREE.Sprite( leafletMaterial);
+sprite.position.set( 0, 0, 0 );
+//sprite.scale.set( 83.5, 129.5, 1.0 ); // imageWidth, imageHeight
+sprite.scale.set( 63.5, 99.5, 1.0 ); // imageWidth, imageHeight
+scene.add( sprite );
+
+
+//Light
+var light = new THREE.PointLight(0xffffff);
+light.position.set(0,250,0);
+scene.add(light);
+var ambientLight = new THREE.AmbientLight(0x111111);
+//scene.add(ambientLight);
+
+var axes = new THREE.AxisHelper(0);
+//scene.add( axes );//Done in animate() not here
+
+//Meshes
+sphere3 = new THREE.Mesh(new THREE.PlaneGeometry(42, 42, 42, 42),
+new THREE.MeshNormalMaterial({ transparent: true, opacity: 0,wireframe:true}));
+scene.add(sphere3);
+
+//cust clickCube
+var faceColorMaterial = new THREE.MeshNormalMaterial( 
+{wireframe:true, transparent: true, opacity: 0.65, color: 0x000fff, vertexColors: THREE.FaceColors } );
+
+var cubeGeometry = new THREE.CubeGeometry(60,60,60,0);
+for ( var i = 0; i < cubeGeometry.faces.length; i++ ) 
+{
+face = cubeGeometry.faces[ i ];	
+face.color.setRGB( 0, 0.5, 0 * Math.random() + 0.6 );		
+}
+clickCube = new THREE.Mesh( cubeGeometry, faceColorMaterial );
+
+scene.add(clickCube);
+
+targets.push(clickCube);
+
+// initialize object to perform world/screen calculations
+projector = new THREE.Projector();
+
+// when the mouse moves, call the given function
+document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+
+}//END INIT
+
+function onDocumentMouseDown( event ) 
+{
+// the following line would stop any other event handler from firing
+// (such as the mouse's TrackballControls)
+// event.preventDefault();
+
+console.log("click");
+
+// update the mouse variable
+mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+// find intersections
+
+// create a Ray with origin at the mouse position
+//   and direction into the scene (camera direction)
+var vector = new THREE.Vector3( mouse.x, mouse.y, 1 );
+projector.unprojectVector( vector, camera );
+var ray = new THREE.Raycaster( camera.position, vector.sub( camera.position ).normalize() );
+
+// create an array containing all objects in the scene with which the ray intersects
+var intersects = ray.intersectObjects( targets );
+
+// if there is one (or more) intersections
+if ( intersects.length > 0 )
+{
+cubeCtr++;
+if(cubeCtr > 1){
+window.open("http://leafletjs.com/","_blank")
+cubeCtr = 0;
+}
+//console.log("Hit on cube @ " + toString( intersects[0].point ) );
+// change the color of the closest face.
+intersects[ 0 ].face.color.setRGB(Math.random(), Math.random(), Math.random()); 
+intersects[ 0 ].object.geometry.colorsNeedUpdate = true;
+cr = cr + 0.15;
+}
+}
+
+function toString(v) { return "[ " + v.x + ", " + v.y + ", " + v.z + " ]"; }
+
+function animate() 
+{
+requestAnimationFrame( animate );
+render();		
+update();
+
+sphere3.scale.set(sphereSize,sphereSize,sphereSize);
+if(sphereSize <= 42) sphereSize *= 1.04;
+if(sphere3.material.opacity <= 0.55) sphere3.material.opacity += 0.003;
+
+clickCube.scale.set(cubeSize,cubeSize,cubeSize);
+if(cubeSize <= 1.5) cubeSize *= 1.01;
+
+sphere3.rotation.y -= 0.001;
+
+if(keyboard.pressed("Y")){
+sphereSize /= 1.05;
+}else if(sphereSize <= 42){sphereSize *= 1.04;}
+
+if(keyboard.pressed("U")){
+sphereSize *= 1.05;
+}else if(sphereSize >= 42){sphereSize /= 1.04;}
+
+if(keyboard.pressed("I")){ 
+sphere3.rotation.x += 0.04;
+sphere3.rotation.y += 0.02;
+sphere3.rotation.z += 0.02;}
+
+if(keyboard.pressed("O"))sphere3.rotation.y += 0.07;
+
+if(keyboard.pressed("P")){
+axes = new THREE.AxisHelper(10000);
+scene.add( axes );
+}
+
+if(keyboard.pressed("A")){
+$('#A').delay(200).fadeIn('slow');
+//document.getElementById('Arthur').play(); //auto play when hit 'A'
+}
+
+clickCube.rotation.y += cr;
+if(keyboard.pressed("space"))cr = 0.01;
+
+}//END ANIM
+
+function update()
+{
+// delta = change in time since last call (in seconds)
+var delta = clock.getDelta(); 
+
+controls.update();
+}
+
+function render() 
+{	
+renderer.render( scene, camera );
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+html, body 
+{
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  margin: 0;
+  overflow: hidden;
+  font-family: Ubuntu, sans-serif;
+  color:white;
+  font-size: 11pt;
+}
+
+#officers, #whowhat
+{
+  text-align: left;
+  font-size: 19pt;
+  background-color:rgba(255,0,0,0.7); 
+  border-radius: 10px;
+  padding:10px;
+  position: relative;
+  left: 7px;
+}
+
+#content
+{
+  text-align: center;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  background-color:rgba(0,0,0,0.7); 
+  height:100%;
+  width: 35%;
+  padding-right:10px;
+  z-index: 2; 
+  position: absolute;
+  right: 0px;
+}
+
+#contlink 
+{
+  font-size:20pt;
+}
+
+.ThreeJS
+{
+  z-index: 1;
+  position: absolute;
+}
+
+.cogscontent 
+{
+  text-align: center;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  background-color:rgba(0,0,0,0.7); 
+  height:100%;
+  width: 42%;
+  padding-right:10px;
+  z-index: 2; 
+  position: absolute;
+}
+
+.Olabels
+{
+  color: black;
+}
+
+#coolstuff
+{
+  display: none;
+  text-align: left;
+  padding-left: 50px;
+  border-radius: 10px;
+  border: 3px solid;
+  margin: auto;
+  width: 70%;
+}
+
+::-webkit-scrollbar 
+{
+  width: 9px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track 
+{
+  background-color:rgba(0,0,0,0.8);
+  -webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+  -webkit-border-radius: 16px;
+  background-color:rgba(255,255,255,0.45);
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+  background-color:rgba(255,0,0,0.5);
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  
+{
+  height: 42px;
+  display: block;
+  background-color: transparent;
+}
+
+a:link,a:visited
+{
+  color:#FFFFFF;
+  background-color:rgba(255,255,255,0.45);
+  font-size:10;
+  width:140px;
+  text-align:center;
+  padding:2px;
+  -webkit-border-radius: 5px;
+  text-decoration:none;
+}
+
+a:hover,a:active
+{
+  background-color:rgba(255,0,0,0.5);
+}

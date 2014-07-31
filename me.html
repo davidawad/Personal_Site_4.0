@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>About me</title>
+<link rel="icon" href="/images/favreaucon.png" type="image/png">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><!--JQuery mofo most up to date?-->
+<meta property="og:image" content="http://google.com"/>
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+<div style="z-index: 3;">
+
+</div>
+
+<center>
+  <div id="HtmlText" style="z-index: 2; position: absolute;">
+    <h4 style="background-color:cyan;">David Awad</h4>
+  </div>
+</center>
+<h1> Under Construction!!! <h1>
+<script src="js/Three.js"></script>
+<script src="js/Detector.js"></script>
+<script src="js/Stats.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/THREEx.KeyboardState.js"></script>
+<script src="js/THREEx.FullScreen.js"></script>
+<script src="js/THREEx.WindowResize.js"></script>
+<!--Imported three.js lib files, may need to update-->
+<div id="ThreeJS" style="z-index: 1; position: absolute; right:0px; top:0px"></div>
+
+<script>
+//global variables
+var container, scene, camera, renderer, controls, stats;
+var keyboard = new THREEx.KeyboardState();
+var clock = new THREE.Clock();
+var mesh1;
+
+init();
+animate();
+function init() 
+{
+  scene = new THREE.Scene();
+
+  scene.fog = new THREE.FogExp2( 0xefd1b5, 0.0002 );
+
+  var SCREEN_WIDTH = window.innerWidth, SCREEN_HEIGHT = window.innerHeight;	
+  var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 20000;
+  camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
+  scene.add(camera);
+  camera.position.set(0,0,4);
+  camera.lookAt(scene.position);	
+
+  if ( Detector.webgl )
+    renderer = new THREE.WebGLRenderer( {antialias:true} );
+  else
+    renderer = new THREE.CanvasRenderer(); 
+
+  renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+  container = document.getElementById( 'ThreeJS' );
+  container.appendChild( renderer.domElement );
+  THREEx.WindowResize(renderer, camera);
+  controls = new THREE.OrbitControls( camera, renderer.domElement );
+  var light = new THREE.DirectionalLight(0xffffff);
+  var light2 = new THREE.DirectionalLight(0xffffff);
+  light.position.set(0,0,200);
+  light2.position.set(0,0,-200);
+  scene.add(light);
+  scene.add(light2);
+  var ambientLight = new THREE.AmbientLight(0x111111);
+
+  function randColor() { //for random color of button mouseover
+    return '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+  }
+  //$("#ThreeJS").css("background-color",randColor());//set inital random color
+
+  $("#ThreeJS").mousemove(function() {
+      //$(this).css("background-color",randColor());//change on mouseover
+      
+      });
+  mesh1 = new THREE.Mesh(new THREE.IcosahedronGeometry( 2 , 3 ),new THREE.MeshNormalMaterial({ transparent: true, opacity: 0.5,wireframe:true}));
+
+  scene.add(mesh1);
+
+  $("#ThreeJS").mousemove(function() {
+     mesh1.rotation.y += 0.001; 
+      });
+
+
+  //Meshes
+  //var loader = new THREE.JSONLoader();
+
+}//END INIT
+
+
+function animate() 
+{
+  requestAnimationFrame( animate );
+  render();		
+  update();
+
+  var time = Date.now() * 0.0005;
+  var delta = clock.getDelta();
+
+  /*toddTextMesh.position.z = Math.cos( time * 50 ) * 50;
+  toddTextMesh.rotation.z = Math.cos( time * 8 ) * 0.5;
+  toddTextMesh.rotation.z += 0.008;*/
+
+}//END ANIM
+
+function update()
+{
+  // delta = change in time since last call (in seconds)
+  var delta = clock.getDelta(); 
+
+  controls.update();
+  //stats.update();
+}
+
+function render() 
+{	
+  var time = Date.now() * 0.0005;
+  var delta = clock.getDelta();
+
+  /*tobias.position.z = Math.cos( time * 10 ) * 1;
+  tobias.rotation.x = Math.cos( time * 20 ) * 1;
+  tobias2.position.z = Math.cos( time * 10 ) * 1;
+  tobias2.rotation.x = Math.cos( time * 40 ) * 0.5;*/
+
+  renderer.render( scene, camera );
+}
+
+</script>
+</body>
+</html>

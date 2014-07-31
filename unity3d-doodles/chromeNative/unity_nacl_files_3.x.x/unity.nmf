@@ -1,0 +1,56 @@
+{
+  "program": {
+    "x86-32": {"url":"i686/runnable-ld.so"},
+    "x86-64": {"url":"x86_64/runnable-ld.so"}
+  },
+  "files": {
+  	"libmono-2.0.so.1": {
+      "x86-32": {"url": "i686/libmono-2.0.so"},
+      "x86-64": {"url": "x86_64/libmono-2.0.so"}
+    },
+  	"librt.so.11652996": {
+      "x86-32": {"url": "i686/librt.so"},
+      "x86-64": {"url": "x86_64/librt.so"}
+    },
+  	"libdl.so.11652996": {
+      "x86-32": {"url": "i686/libdl.so"},
+      "x86-64": {"url": "x86_64/libdl.so"}
+    },
+  	"libnacl_dyncode.so": {
+      "x86-32": {"url": "i686/libnacl_dyncode.so"},
+      "x86-64": {"url": "x86_64/libnacl_dyncode.so"}
+    },
+  	"libpthread.so.11652996": {
+      "x86-32": {"url": "i686/libpthread.so"},
+      "x86-64": {"url": "x86_64/libpthread.so"}
+    },
+  	"libppapi_cpp.so": {
+      "x86-32": {"url": "i686/libppapi_cpp.so"},
+      "x86-64": {"url": "x86_64/libppapi_cpp.so"}
+    },
+  	"libppapi_gles2.so": {
+      "x86-32": {"url": "i686/libppapi_gles2.so"},
+      "x86-64": {"url": "x86_64/libppapi_gles2.so"}
+    },
+  	"libstdc++.so.6": {
+      "x86-32": {"url": "i686/libstdc++.so"},
+      "x86-64": {"url": "x86_64/libstdc++.so"}
+    },
+  	"libm.so.11652996": {
+      "x86-32": {"url": "i686/libm.so"},
+      "x86-64": {"url": "x86_64/libm.so"}
+    },
+  	"libgcc_s.so.1": {
+      "x86-32": {"url": "i686/libgcc_s.so"},
+      "x86-64": {"url": "x86_64/libgcc_s.so"}
+    },
+  	"libc.so.11652996": {
+      "x86-32": {"url": "i686/libc.so"},
+      "x86-64": {"url": "x86_64/libc.so"}
+    },
+    "main.nexe" : {
+      "x86-32": {"url": "i686/unity.nexe"},
+      "x86-64": {"url": "x86_64/unity.nexe"}
+    }
+  }
+}

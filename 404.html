@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="/images/favreaucon.png" type="image/png">
+
+<head>
+<title>404 Error</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><!--JQuery mofo most up to date?-->
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body bgcolor="#000000">
+<video class="gfyVid" autoplay="" loop="" poster="true" height="" width="" style="opacity:1; position: absolute; top: 0px; left: 0px; border: 0px; padding: 0px; z-index: 1;">
+  <source id="webmsource" src="https://zippy.gfycat.com/EntireHomelyHamadryad.webm" type="video/webm" class="webmsource">
+</video>
+
+<script>
+$(function() {  
+    var winHeight = $(window).height();
+    $('video').css({  'height': winHeight, 'width': '100%'});
+    });
+</script>
+
+<!--  <div id="404text" style="z-index: 2">
+    <img src="https://raw.githubusercontent.com/sia/sia.github.io/master/images/dontpanic.jpg" width="204" height="128">
+  <p>Hello this is my 404 page. Sorry... Have a random fact: 
+  <a href = "http://en.wikipedia.org/wiki/Special:Randompage" target="_blank">Random Wikipedia Page!</a> </p>
+  <h2><a href = "http://sia.github.io">sia.github.io</a> </h2>
+</div>-->
+<script src="js/Three.js"></script>
+<script src="js/Detector.js"></script>
+<script src="js/Stats.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/THREEx.KeyboardState.js"></script>
+<script src="js/THREEx.FullScreen.js"></script>
+<script src="js/THREEx.WindowResize.js"></script>
+<div id="ThreeJS" style="opacity: 0.5; z-index: 2; position: absolute; right:0px; top:0px; background-color: #000000"></div>
+<script>
+//global variables
+var container, scene, camera, renderer, controls, stats;
+var keyboard = new THREEx.KeyboardState();
+var clock = new THREE.Clock();
+var cube1, mesh404;
+var userData;
+var targets = [];
+var projector, mouse = {x: 0, y: 0};
+init();
+animate();
+function init() 
+{
+  scene = new THREE.Scene();
+  var SCREEN_WIDTH = window.innerWidth, SCREEN_HEIGHT = window.innerHeight;	
+  var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 20000;
+  camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
+  scene.add(camera);
+  camera.position.set(0,0,40);
+  camera.lookAt(scene.position);	
+
+  //renderer create and start the renderer; choose antialias setting.
+  if ( Detector.webgl )
+    renderer = new THREE.WebGLRenderer( {antialias:true} );
+  else
+    renderer = new THREE.CanvasRenderer(); 
+
+  renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+  container = document.getElementById( 'ThreeJS' );
+  container.appendChild( renderer.domElement );
+  THREEx.WindowResize(renderer, camera);
+  controls = new THREE.OrbitControls( camera, renderer.domElement );
+  var light = new THREE.DirectionalLight( 0xffffff, 0.5 );
+  light.position.set( 0,100,400 );
+  scene.add( light );
+
+  plane = new THREE.Mesh(new THREE.PlaneGeometry(200,200,42,42), new THREE.MeshNormalMaterial({transparent: true,opacity: 0.5,wireframe:true}));
+  scene.add(plane);
+
+  //Blender
+  var loader = new THREE.JSONLoader();
+
+  loader.load( 'meshes/404mesh.js', function(geometry, materials){
+      for(var i =0;i<materials.length;i++){
+      materials[i].shading = THREE.FlatShading;
+      materials[i].opacity = 0.42;
+      }
+      var material = new THREE.MeshFaceMaterial({shading: THREE.FlatShading});
+      mesh404  = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
+      mesh404.position.set(0, 13, 0);
+      scene.add(mesh404);
+      });
+
+}//END INIT
+function animate() 
+{
+  requestAnimationFrame( animate );
+  render();		
+  update();
+  mesh404.position.y += (Math.sin( new Date().getTime() * 0.007 ))*0.7;
+  plane.rotation.y += 4;
+  plane.rotation.z += 4;
+  if(plane.rotation.y >= 2) plane.rotation.y /= 1.09;
+  if(plane.rotation.z >= 3) plane.rotation.z /= 1.09;
+}//END ANIM
+function update()
+{
+  // delta = change in time since last call (in seconds)
+  var delta = clock.getDelta(); 
+
+  controls.update();
+}
+
+function render() 
+{	
+  renderer.render( scene, camera );
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Unituesdays! | Learn Unity... Have fun!</title>
+<meta property="og:image" content="http://i.imgur.com/M8zyBH3.png?1"/>
+<link rel="icon" href="../images/favreaucon.png" type="image/png">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./unituestyle.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+<div  id="cogscontent"  class="cogscontent">
+  <center>
+    <span 
+      style="color:white;font-size: 19pt" 
+      title="Creation Of Games Society">Unituesdays
+    </span>
+    <p style="font-size:14pt">So some of us are meeting on Tuesdays from 2:00-3:30pm in the CAVE watching Unity tutorials that are pretty good. It's casual and open to all COGS and others (may put links to project files).</p>
+    <p style="font-size:11pt"> <a href = "" onclick="return false" style="font-size: 12pt">7/15/14:</a>
+    Thus far we've gotten to the first video in chapter 3.</p>
+  </center> </br> </br> </br>
+
+  <p style="font-size:11pt">Here's something I've been fidding around with.</p>
+  <a href = "https://sia.github.io/unituesdays/game.html" style="font-size: 15pt">Cityscape Test Game</a></br></br>
+  <a href = "https://sia.github.io/unituesdays/cityscapetest.exe" style="font-size: 11pt">Windows</a>
+  <a href = "https://sia.github.io/unituesdays/cityscapeLinux.tar.gz" style="font-size: 11pt">Linux</a>
+
+</div><!--End of the html, links, non threejs, essentially the website, in a div zindex > than threejs-->
+
+<script src="../js/Three.js"></script>
+<script src="../js/Detector.js"></script>
+<script src="../js/Stats.js"></script>
+<script src="../js/THREEx.KeyboardState.js"></script>
+<script src="../js/THREEx.FullScreen.js"></script>
+<script src="../js/THREEx.WindowResize.js"></script>
+<script src="OrbitControlsOff.js"></script>
+<!--Imported three.js lib files, may need to update-->
+<div id="ThreeJS" class="ThreeJS"></div>
+<script>
+//global variables
+var container, scene, camera, renderer, controls, stats;
+var keyboard = new THREEx.KeyboardState();
+var clock = new THREE.Clock();
+var lensflare;
+var specv = '#00FF00';
+var emv = '#1A0000';
+
+init();
+animate();
+function init() 
+{
+  scene = new THREE.Scene();
+  var SCREEN_WIDTH = window.innerWidth, SCREEN_HEIGHT = window.innerHeight;	
+  var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 100;
+  camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
+  scene.add(camera);
+  camera.position.set(0,0,5);
+  camera.lookAt(scene.position);  
+
+  //Renderer create and start the renderer; choose antialias setting.
+  if ( Detector.webgl )
+    renderer = new THREE.WebGLRenderer( {antialias:true, alpha: true } );
+  else
+    renderer = new THREE.CanvasRenderer(); 
+  //renderer.setClearColor( scene.fog.color, 1 );
+  renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+  // fog must be added to scene before first render
+  //scene.fog = new THREE.FogExp2( 0x9999ff, 100000000);
+  // attach div element to variable to contain the renderer
+  container = document.getElementById( 'ThreeJS' );
+  container.appendChild( renderer.domElement );
+  renderer.gammaInput = true;
+  renderer.gammaOutput = true;
+  THREEx.WindowResize(renderer, camera);
+
+  controls = new THREE.OrbitControls( camera, renderer.domElement );
+
+  //Light
+  var light = new THREE.PointLight(0xffffff, 1, 30);
+  light.position.set(0,00,200);
+  scene.add(light);
+
+  plane = new THREE.Mesh(new THREE.PlaneGeometry(42,42,80,80), new THREE.MeshNormalMaterial({transparent: true,opacity: 0.5,wireframe:true}));
+  scene.add(plane);
+
+  scene.fog = new THREE.FogExp2( 0xFFFFFF, 100001 );
+
+}//END INIT
+
+function onWindowResize( event ) {
+  renderer.setSize( window.innerWidth, window.innerHeight );
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+}
+
+function animate() 
+{
+  requestAnimationFrame( animate );
+  render();		
+  update();
+
+  plane.rotation.x -= 0.001;
+  plane.rotation.z -= 0.0001;
+
+}//END ANIM
+
+function update()
+{
+  // delta = change in time since last call (in seconds)
+  //var delta = clock.getDelta(); 
+
+  controls.update();
+}
+
+function render() 
+{	
+  var time = Date.now() * 0.0005;
+  var delta = clock.getDelta();
+
+  renderer.render( scene, camera );
+}
+
+</script>
+</body>
+</html>

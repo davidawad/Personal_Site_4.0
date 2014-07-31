@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>What is that? | Off in the distance...</title>
+<link rel="icon" href="/images/favreaucon.png" type="image/png">
+<meta property="og:title" content="What is that? ...Off in the distance"/>
+<meta property="og:image" content="http://i.imgur.com/CatgnPi.jpg"/>
+<meta property="og:site_name" content="www.erroneousName.youSuck!"/>
+<meta property="og:description" content="This is a website."/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+<script src="js/Three.js"></script>
+<script src="js/Detector.js"></script>
+<script src="js/Stats.js"></script>
+<script src="js/THREEx.KeyboardState.js"></script>
+<script src="js/THREEx.FullScreen.js"></script>
+<script src="js/THREEx.WindowResize.js"></script>
+<script type='text/javascript' src='js/tween.min.js'></script>
+<!--Imported three.js lib files, may need to update-->
+<div id="ThreeJS" style="z-index: 1; position: absolute; right:0px; top:0px"></div>
+<script>
+var container, scene, camera, renderer, controls, stats, f;
+var i = 1;
+var clock = new THREE.Clock();
+
+init();
+animate();
+function init() 
+{
+  scene = new THREE.Scene();
+  var SCREEN_WIDTH = window.innerWidth, SCREEN_HEIGHT = window.innerHeight;	
+  var VIEW_ANGLE = 45, ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, NEAR = 0.1, FAR = 20000000;
+  camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
+  scene.add(camera);
+  camera.position.set(0,0,6500);
+  camera.lookAt(scene.position);	
+
+  if ( Detector.webgl )
+    renderer = new THREE.WebGLRenderer( {antialias:true} );
+  else
+    renderer = new THREE.CanvasRenderer(); 
+
+  renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+
+  container = document.getElementById( 'ThreeJS' );
+  container.appendChild( renderer.domElement );
+  THREEx.WindowResize(renderer, camera);
+  //controls = new THREE.OrbitControls( camera, renderer.domElement );
+  var light = new THREE.PointLight(0xffffff);
+  light.position.set(0,100,0);
+  scene.add(light);
+
+  loader = new THREE.JSONLoader();
+  loader.load( 'meshes/f.js', function(geometry){
+      var material = new THREE.MeshPhongMaterial({color: "#FF0000",shading:THREE.FlatShading});
+
+      f = new THREE.Mesh(geometry, material);
+      f.scale.set(2,2,2);
+      f.position.set(0,0,0);
+      scene.add(f);
+      });
+}
+
+
+
+function animate() 
+{
+  requestAnimationFrame( animate );
+  render();		
+  update();
+
+  f.position.z = (i*(i++))/42;
+
+  console.log(f.position.z);
+
+  if(f.position.z > 6501) f.position.z = 6502;
+}
+
+function update(){
+
+  //controls.update();
+
+}
+
+function render() {renderer.render( scene, camera );}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "newshahan",
+  "description": "newshahan",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+  },
+  "requirements": {
+    "3D": {
+      "features": ["css3d", "webgl"]
+    }
+  },
+  "icons": {
+	  "16": "icon16.png",
+	  "48": "icon48.png",
+	  "128": "icon128.png"
+  },
+  "app": {
+    "launch": {
+      "local_path": "chromeU_nacl.html"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<!--
+	Copyright (c) 2011 The Native Client Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style license that can be
+	found in the LICENSE file.
+	-->
+<head>
+	<title>Unity Native Client Player | newshahan</title>
+	<script type="text/javascript" src="unity_nacl_files_3.x.x/unity_nacl.js"></script>
+</head>
+<body style="text-align: center">
+
+<div id="listener">
+	<script src="unity_nacl_files_3.x.x/listener.js"></script>
+
+	<p class="header"><span>Unity Native Client Player | </span>newshahan</p>
+	
+	<img id="Logo" src="unity_nacl_files_3.x.x/unitylogo.png">
+	<img id="Progress" src="unity_nacl_files_3.x.x/unityprogress.png">
+	<img id="ProgressFrame" src="unity_nacl_files_3.x.x/unityprogressframe.png">
+	<div id="Status"></div>
+	<div id="Unity" style="width: 960px; height: 600px; padding: 0px; border: none; margin: 0px auto;">
+	<embed name="nacl_module"
+	id="UnityEmbed"
+	width="960" height="600"
+	src="unity_nacl_files_3.x.x/unity.nmf"
+	type="application/x-nacl"
+	onload="moduleDidLoad();" 
+	data="chromeU.unity3d"
+	
+	/>
+	</div>
+</div>
+</body>
+</html>
