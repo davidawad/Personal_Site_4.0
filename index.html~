@@ -22,7 +22,7 @@ b {
     float: left;
     text-decoration: none;
     color: black;
-    font-family: Georgia, Times, Time New Roman, serif;	
+    font-family: Georgia, Times, Time New Roman, serif;
     background-color: white;
     padding: 0.2em 0.6em;
     border-right: 1px solid white;
