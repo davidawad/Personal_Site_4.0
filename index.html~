@@ -118,7 +118,7 @@ and <a id="link_linkiesta" class="accordion" href="#" onclick="return false;">Li
 
 <div style="border-top: 1px solid #3e3e3e; margin: 3% auto;  width: 100%;"></div>
 
-<p id="parcontatti">I'm looking for a job. Do you want to work with me? <a class="contatti" href="mailto:jacopo.colo(at)gmail.com">Write me</a>. I'm also on <a class="contatti" href="http://www.facebook.com" target="_blank">Facebook</a>, and <a class="contatti" href="http://it.linkedin.com/in/jacopocolo" target="_blank">LinkedIn</a>. And here you can find my <a class="contatti" href="http://goo.gl/qZ4BlW" target="_blank">resume</a>.</p>
+<p id="parcontatti">Looking for a new intern? <a class="contatti" href="mailto:davidawad64(at)gmail.com">Email Me!</a>. I'm also on <a class="contatti" href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a>, and <a class="contatti" href="http://it.linkedin.com/in/jacopocolo" target="_blank">LinkedIn</a>. And here you can find my <a class="contatti" href="http://goo.gl/qZ4BlW" target="_blank">resume</a>.</p>
 
 <div id="simboli"> <a href="#" id="smiley">:)</a>
 <a href="#" id="heart">Hand coded with &#10084;</a></div>

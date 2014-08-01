@@ -60,6 +60,29 @@ __          ___    _       _______ ________      ________ _____   __          __
     </span>
   </a>
   </br>
+
+<!--  <button id="h" title="Click to show content."> FIRST  BUTTON</button></br>
+
+  <div id="hackru" style="display: none">
+    <p>Ever heard of <a href = "https://www.nidhogggame.com/" 
+      style="TEXT-DECORATION: NONE"
+      target="_blank">Nidhogg</a>? </br> Welcome to Jormungandr!
+    </br>Play Jormungandr: <a href = "https://sia.github.io/jormungandr/jormlite" 
+      style="TEXT-DECORATION: NONE"
+      target="_blank">Jormungandr(Lite Version)</a>:
+    <a href = "https://github.com/sia/sia.github.io/tree/master/jormungandr" 
+      style="TEXT-DECORATION: NONE"
+      target="_blank">source code</a>
+  </div> -->
+
+<!--  <a href = "https://www.youtube.com/user/ShahanDraw/videos" 
+    style="TEXT-DECORATION: NONE"
+    target="_blank">
+    <span 
+      style="color:orange;font-size: 11pt" 
+      title="Some videos of me drawing."> LINK TO YOUTUBE CHANNEL
+    </span>
+  </a> -->
 <span 
     style="font-size: 20pt"> Add me on
   </span> 
