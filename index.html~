@@ -17,9 +17,8 @@ ul {
     margin: 0;
     list-style-type: none;
 }
-
 b {
-    float: left;
+    float: ;
     text-decoration: none;
     color: black;
     font-family: Georgia, Times, Time New Roman, serif;
@@ -27,7 +26,6 @@ b {
     padding: 0.2em 0.6em;
     border-right: 1px solid white;
 }
-
 b:hover {
     color: teal;
 }
