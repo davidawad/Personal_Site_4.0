@@ -106,7 +106,7 @@ $("#age").html(myage);
 David's Device Repair</a>;
 <div class="hide">
 <div class="date">(June 2014 - )</div>
-I started my own business fixing devices for people after wanting to get a little bit more experience with fixing software and hardware and It's been one of the best decisions i've ever made. I've lerned so much about computing just spending my summer coding and fixing hardware too. Visit us <span style="TEXT-DECORATION: NONE" class="link_about" href="devicerepair.github.io">here</span>! </div>
+I started my own business fixing devices for people after wanting to get a little bit more experience with fixing software and hardware and It's been one of the best decisions i've ever made. I've lerned so much about computing just spending my summer coding and fixing hardware too. Visit us <a style="TEXT-DECORATION: NONE" class="link_about" href="devicerepair.github.io">here</a>! </div>
 worked for
 
 <a id="link_pcmagazine" class="accordion" href="#">The Rutgers University Glee Club</a>,
