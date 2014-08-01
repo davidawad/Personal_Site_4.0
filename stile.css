@@ -1,0 +1,78 @@
+body {
+background-color: rgb(255, 255, 255);
+}
+
+body {
+	color: rgb(40, 40, 40);
+
+}
+
+div#wrapper {
+	letter-spacing: normal;
+	font-family: Georgia, Times, Time New Roman, serif;	
+	text-rendering: optimizeLegibility;
+	font-size: 0.8em;
+	height: auto;
+	max-width: 600px;
+	min-width: 300px;
+	margin-top: 5%;
+	margin: 0 auto;
+}
+
+div#space {height: 10px;}
+	
+div.hide {		display: none;
+ 				font-size: 0.44em;
+ 				margin: 10px 0px 10px 0px;
+ 				width: auto;
+ 				line-height: 140%;
+ 				height: auto;
+ 				color: 2B1B17; }
+div#simboli{font-size:10px;
+	text-align: center;
+}
+
+div.date {
+	color: rgb(80, 80, 80);
+	font-size: 0.8em;
+}
+
+p1 {margin-top: -50px;
+display: table;}
+p2, p3 {margin-top: -10px;
+display: table;}
+p1, p2, p3 {line-height: 100%;
+			display: table;
+		
+ 			}
+ 			
+p#parcontatti {font-size: 0.44em;} 			
+ 			
+a {text-decoration: none;}
+a#link_saatchi {color: rgb(2, 193, 164);}
+a#link_pcmagazine {color: rgb(238, 16, 78);}
+a#link_macchianera {color: rgb(0, 100, 137);}
+a#link_radionation {color: rgb(248, 207, 30);}
+a#link_personalreport {color: rgb(48, 51, 54);}
+a#link_annamaria {color: rgb(249, 174, 43);}
+a#link_ogilvy {color: rgb(9, 92, 120);}
+a#link_linkiesta {color: rgb(22, 107, 163);}
+a.contatti {color: rgb(66, 66, 66);
+font-weight: bold;}
+a.link_descrizione  {
+text-decoration: underline;
+color: rgb(66, 66, 66);}
+a.link_about {
+	color: inherit;
+	text-decoration: underline;
+}
+
+a#smiley {text-decoration:none; 
+		webkit-transform: rotate(90deg);
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+a#smiley {color:#888;}
+
+a#heart {text-decoration:none;
+	display:none;}
+a#heart {color:#888;}
