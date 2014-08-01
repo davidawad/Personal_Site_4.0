@@ -3,30 +3,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
-<title>404 Error!</title>
+<title>About Me! | David Awad</title>
 <meta name="description" content="David Awad's personal and professional website."> 
 <link rel="shortcut icon" href="images/scirra.ico" type="image/x-icon" />  
 <meta name="Keywords" content=" David Awad, copywriter, podcast, blog, Feeder, portfolio, hex clock, android, programming, physics, web development, philosophy" />
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 <link href="//fonts.googleapis.com/css?family=Sansita+One" rel="stylesheet" type="text/css" />
+</head>
 <meta charset="utf-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><!--JQuery mofo most up to date?-->
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 </head>
-
-<style> 
-body{
-
-
-}
-h1{
-
-
-}
-</style>
-
-
 <body background="images/aqua-stripes.jpg">
 <h1> 404 Error </h1>
 <p>        woops, i don't think this page exists! Honestly i'm surprised you ended up here. You can jump back to the home page       </p>

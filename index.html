@@ -8,7 +8,40 @@
 <link rel="shortcut icon" href="images/scirra.ico" type="image/x-icon" />  <!--fix this!!-->
 <meta name="Keywords" content=" David Awad, copywriter, podcast, blog, Feeder, portfolio, hex clock, android, programming, physics, web development, philosophy" />
 <link rel="stylesheet" type="text/css" href="style.css"/>
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--
+<style>
+ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+b {
+    float: left;
+    width: 6em;
+    text-decoration: none;
+    color: purple;
+    background-color: white;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid white;
+}
+
+b:hover {
+    background-color: light-blue;
+}
+
+li {
+    display: inline;
+}
+</style> -->
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
   $(document).ready(function() {
      
@@ -33,11 +66,6 @@
         
      });
       
-    
-      
-    /********************************************************************************************************************
-    CLOSES ALL S ON PAGE LOAD
-    ********************************************************************************************************************/  
     $('.accordionContent').hide();
     $('#open').show();
   
@@ -61,6 +89,7 @@ $("#age").html(myage);
 </head>
 
 <body>
+
 <div id="wrapper">
 
 <p id="1"> Hey, I'm David Awad.</p>
@@ -140,9 +169,6 @@ return true;
     $("div#wrapper").fitText(1.2, { minFontSize: 12, maxFontSize: '41px' });    
 </script> 
 
-   <audio controls autoplay>
-       <source src="music/rocket-space.mp3" type="audio/mpeg">
-       Your browser does not support the <audio> element.
-   </audio> 
+
 </body>
 </html>
