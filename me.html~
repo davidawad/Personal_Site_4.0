@@ -19,5 +19,10 @@
 <h1> 404 Error </h1>
 <p>        woops, i don't think this page exists! Honestly i'm surprised you ended up here. You can jump back to the home page       </p>
 
+
+   <audio controls autoplay>
+       <source src="music/rocket-space.mp3" type="audio/mpeg">
+       Your browser does not support the <audio> element.
+   </audio> 
 </body>
 </html>

@@ -9,10 +9,9 @@
 <meta name="Keywords" content=" David Awad, copywriter, podcast, blog, Feeder, portfolio, hex clock, android, programming, physics, web development, philosophy" />
 <link rel="stylesheet" type="text/css" href="style.css"/>
 
-<!--
 <style>
 ul {
-    float: left;
+    float: center;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -21,22 +20,22 @@ ul {
 
 b {
     float: left;
-    width: 6em;
     text-decoration: none;
-    color: purple;
+    color: black;
+    font-family: Georgia, Times, Time New Roman, serif;	
     background-color: white;
     padding: 0.2em 0.6em;
     border-right: 1px solid white;
 }
 
 b:hover {
-    background-color: light-blue;
+    color: teal;
 }
 
 li {
     display: inline;
 }
-</style> -->
+</style>
 
 
 
@@ -89,6 +88,15 @@ $("#age").html(myage);
 </head>
 
 <body>
+
+<ul>
+<li><b href="#">Link one</b></li>
+<li><b href="#">Link two</b></li>
+<li><b href="#">Link three</b></li>
+<li><b href="#">Link four</b></li>
+</ul>
+
+<br>
 
 <div id="wrapper">
 
@@ -169,9 +177,6 @@ return true;
     $("div#wrapper").fitText(1.2, { minFontSize: 12, maxFontSize: '41px' });    
 </script> 
 
-   <audio controls autoplay>
-       <source src="music/rocket-space.mp3" type="audio/mpeg">
-       Your browser does not support the <audio> element.
-   </audio> 
+
 </body>
 </html>
