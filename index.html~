@@ -3,12 +3,10 @@
 <head>   <!--WHY DOES THIS ONLY WORK IN THE CLOUD -->
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
-<title>David Awad | Web Developer</title>
+<title>David Awad | College Student</title>
 <meta name="description" content="David Awad's personal and professional website."> 
-
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />  <!--fix this!!-->
-<meta name="Keywords" content="Jacopo Col&ograve;, Jacopo Colo, copywriter, podcast, blog, Feeder, Fumble, Radio, portfolio, Personal Report, hex clock, hexclock" />
-
+<link rel="shortcut icon" href="images/scirra.ico" type="image/x-icon" />  <!--fix this!!-->
+<meta name="Keywords" content=" David Awad, copywriter, podcast, blog, Feeder, portfolio, hex clock, android, programming, physics, web development, philosophy" />
 <link rel="stylesheet" type="text/css" href="style.css"/>
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
@@ -67,7 +65,7 @@ $("#age").html(myage);
 
 <p id="1"> Hey, I'm David Awad.</p>
 
-<p id="2">I'm <span id="age"></span> years old. I'm a Programmer, Physicist and Philosopher I made the <a class="link_about" href="http://www.jacopocolo.com/hexclock">hex clock</a> and at least one other <a class="link_about" href="http://www.jacopocolo.com/hottercolder/">cool thing</a>.</p>
+<p id="2">I'm <span id="age"></span> years old. I'm a Programmer, Physicist and Philosopher. I started my own company fixing devices for people called<a class="link_about" href="http://www.jacopocolo.com/hexclock"> David's Device Repair </a>. Before we go any further thanks to Jacopo Colo for his help with this site that I'll be working on for a while. So with that in mind please check out this <a style="text-decoration:none"class="link_about" href="http://www.jacopocolo.com/hottercolder/">cool thing</a>!</p>
 
 <div id ="3">I worked for <a id="link_saatchi" class="accordion" href="#" onclick="return false;">
 Saatchi & Saatchi</a>,
