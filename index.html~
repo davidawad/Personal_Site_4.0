@@ -8,7 +8,6 @@
 <link rel="shortcut icon" href="images/scirra.ico" type="image/x-icon" />  
 <meta name="Keywords" content=" David Awad, copywriter, podcast, blog, Feeder, portfolio, hex clock, android, programming, physics, web development, philosophy" />
 <link rel="stylesheet" type="text/css" href="style.css"/>
-<link rel="stylesheet" type="text/css" href="style.css"/><!--making html comments sucks -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
@@ -126,7 +125,7 @@ My Favorite
 
 
 <div id="simboli"> <a href="#" id="smiley">:)</a>
-<a href="#" id="heart">Hand coded with &#10084;</a></div>
+<a href="#" id="heart">Hand coded with <span id="heart">&#10084;</span></a></div>
  <script>
 $("a#smiley").click(function () {
 $("a#heart").toggle();
