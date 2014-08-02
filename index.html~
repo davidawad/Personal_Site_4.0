@@ -54,7 +54,6 @@ $("#age").html(myage);  <!-- jquery takes the script variable into an html varia
 }
 );
 </script>
-
 </head>
 
 <body>
@@ -65,6 +64,7 @@ $("#age").html(myage);  <!-- jquery takes the script variable into an html varia
 <li><a href="/interests.html">What I'm up to</a></li>
 <li><a href="https://github.com/davidawad" target="_blank">My <span style="color:rgb(9, 92, 120)">Github</span></a></li> 
 </ul>
+<div style="border-top: 1px solid #3e3e3e; margin: 3% auto;  width: 100%;"></div>
 
 <br>
 
@@ -78,7 +78,7 @@ $("#age").html(myage);  <!-- jquery takes the script variable into an html varia
 David's Device Repair</a>;
 <div class="hide">
 <div class="date">(June 2014 - )</div>
-I started my own business fixing devices for people after wanting to get a little bit more experience with fixing software and hardware and It's been one of the best decisions i've ever made. I've lerned so much about computing just spending my summer coding and fixing hardware too. Visit us <a target="_blank" style="TEXT-DECORATION: NONE"  href="https://devicerepair.github.io">here</a>! </div>
+I started my own business fixing devices for people after wanting to get a little bit more experience with fixing software and hardware and It's been one of the best decisions I've ever made. I've learned so much about computing just spending my summer coding and fixing hardware too. Visit us <a target="_blank" style="TEXT-DECORATION: NONE"  href="https://devicerepair.github.io">here</a>! </div>
 worked for
 
 <a id="link_pcmagazine" class="accordion" href="#">The Rutgers University Glee Club</a>,
@@ -92,29 +92,27 @@ worked for
       I was a device technician at a PC warehouse where I was responsible for fixing any computers that came into the store while also providing occasional sales support to customers.  
   </div> and
 
-<a id="link_radionation" class="accordion" href="#">Edison Township</a><!--, nothing after this right now! -->
+<a id="link_radionation" class="accordion" href="#">Edison Township</a>.<!--, nothing after this right now! -->
   <div class="hide">
     <div class="date">(jul 2012 - aug 2012)</div>
       I was an intern for the Mayor of my township for one summer. I attended lots of political events and got to meet state senators and Governor Chris Christie! 
-  </div> 
-<!--
-<a id="link_personalreport" class="accordion" href="#">Personal Report</a>,
+  </div>.  
+I'm hoping to find a Job in either  
+
+<a id="link_personalreport" class="accordion" href="#">Web Development</a>,
   <div class="hide">
     <div class="date">(jun 2010 - jan 2013)</div>
     I wrote about design and weird stuff for <a class="link_descrizione" href="http://www.personalreport.it/" target="blank" >Personal Report</a>, beloved (and now defunct) italian design blog. I also managed collaborators and wrote a weekly column about <a class="link_descrizione" href="http://www.personalreport.it/category/daily-infographics/" target="_blank">data visualization and infographics</a>.
       </div> 
 
-<a id="link_annamaria" class="accordion" href="#">Annamaria Testa</a>,
+<a id="link_annamaria" class="accordion" href="#">Engineering</a>, or even as a
   <div class="hide">
-    <div class="date">(jan 2011 - jan 2012)</div>
-    I was a copywriter for the advertising agency of <a class="link_descrizione" href="http://annamariatesta.it/biografia.htm" target="blank">Annamaria Testa</a>, major italian copywriter. I also wrote a lot for <a class="link_descrizione" target="blank" href="www.nuovoeutile.it">Nuovo e Utile</a> (New and Useful), a website about creativity theories and techniques.
+    My dream job would probably be as an acceleration engineer at the Large Hadron Collider in Switzerland. More realistically any engineering firms or really anywhere that I could study and apply the latest physics to make useful and exciting things.   
     </div>
     
-<a id="link_ogilvy" class="accordion" href="#" onclick="return false;">Ogilvy</a>
+<a id="link_ogilvy" class="accordion" href="#" onclick="return false;">Philsosopher</a>.
   <div class="hide">
-  <div class="date">(feb 2012 - jul 2013)</div>
-    I was a copywriter for the advertising agency Ogilvy & Mather. I worked on several projects and with several clients but my main 
-    focus was the major telecommunication company Wind. For a while, I was in charge of whole digital advertising for the client, from banners to DEMs, to posts on social networks.
+    It could happen. 
   </div>
 
 and <a id="link_linkiesta" class="accordion" href="#" onclick="return false;">Linkiesta</a>.
@@ -123,7 +121,8 @@ and <a id="link_linkiesta" class="accordion" href="#" onclick="return false;">Li
     I write about culture and entertainment, edit articles and manage collaborators for one of the major italian online newspaper: 
     <a class="link_descrizione" href="http://www.linkiesta.it/cultura" target="blank">Linkiesta</a>. I joined the editorial staff with a team that relaunched the culture section, now one of the main traffic sources for the newspaper.
   </div>
--->
+
+
 <div style="border-top: 1px solid #3e3e3e; margin: 3% auto;  width: 100%;"></div>
 
 <p id="parcontatti">Looking for a new intern? <a class="contatti" href="mailto:davidawad64(at)gmail.com">Email me!</a>. I'm also on <a class="contatti" href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a>, and <a class="contatti" href="http://linkedin.com/" target="_blank">LinkedIn</a>. Here is my <a class="contatti" href="http://goo.gl/qZ4BlW" target="_blank">resume</a>.</p>
