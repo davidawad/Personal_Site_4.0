@@ -57,13 +57,11 @@
 <div class="hide">
 You can get back to the home page <a style="TEXT-DECORATION: NONE; color:teal;"  href="https://davidawad.github.io" title="Thanks!">here</a>. </div>
 
-   <audio controls > <!-- autoplay -->
+   <audio autoplay> <!--  -->
        <source src="music/wah wah sound effect.mp3" type="audio/mpeg">
        Your browser does not support the <audio> element.
    </audio> 
 
-<embed src="music/wah wah sound effect.mp3" autostart="true" width="2" height="0"> 
-</embed>
 
 <div style="border-top: 1px solid #3e3e3e; margin: 3% auto;  width: 100%;"></div>
 
