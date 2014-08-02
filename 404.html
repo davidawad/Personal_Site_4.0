@@ -9,10 +9,38 @@
 <meta name="Keywords" content=" David Awad, copywriter, podcast, blog, Feeder, portfolio, hex clock, android, programming, physics, web development, philosophy" />
 <link rel="stylesheet" type="text/css" href="style.css"/>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+     
+    //ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
+    $('.accordion').click(function() {
+  
+      //REMOVE THE ON CLASS FROM ALL BUTTONS
+      $('.accordion').removeClass('on');
+        
+      //NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
+       $('.hide').slideUp('fast');
+     
+      //IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
+      if($(this).next().is(':hidden') == true) {
+        
+        //ADD THE ON CLASS TO THE BUTTON
+        $(this).addClass('on');
+          
+        //OPEN THE SLIDE
+        $(this).next().slideDown('fast');
+       } 
+        
+     });
+      
+    $('.accordionContent').hide();
+    $('#open').show();
+  
+  });
+  </script>  
 </head>
-
 <body>
-
 <ul>
 <li><a href="/index.html">Home</a></li>  <!-- <li><a id = "header" href="davidawad.github.io">Home</a></li>-->
 <li><a href="/me.html">My Interests</a></li>
@@ -23,9 +51,18 @@
 
 <div id="wrapper">
 
-<h1> 404 Error</h1>
-<p> I don't exactly know how this happened. Sorry About That! Here, have a <span style="color:red" href="/David Awad.pdf">Resume</span>.</p>
+<p id="1"> 404 Error.</p>
 
+<div id ="3">I don't know how that happened. sorry about that. Here have a <a id="link_saatchi" class="accordion" href="#" onclick="return false;" title="The Best Resume Ever"> 
+Resume</a>;
+<div class="hide">
+<div class="date">(June 2014 - )</div>
+I started my own business fixing devices for people after wanting to get a little bit more experience with fixing software and hardware and It's been one of the best decisions I've ever made. I've learned so much about computing just spending my summer coding and fixing hardware too. Visit us <a target="_blank" style="TEXT-DECORATION: NONE"  href="https://devicerepair.github.io" title="Not working just yet!" >here</a>! </div>
+My Favorite 
+<a id="link_linkiesta" class="accordion" href="#" onclick="return false;">Languages</a>.
+  <div class="hide">
+  	Java, HTML, CSS, JavaScript, <span title="oh hey" style="color:rgb(9, 92, 120);">Pyt</span><span title="yep" style="color: rgb(248, 207, 30);">hon</span>, and C. 
+  </div>
 
 <div style="border-top: 1px solid #3e3e3e; margin: 3% auto;  width: 100%;"></div>
 
