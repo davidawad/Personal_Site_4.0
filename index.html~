@@ -71,7 +71,7 @@ $("#age").html(myage);  <!-- jquery takes the script variable into an html varia
 
 <p id="2">I'm <span id="age"></span> years old. I'm a <span id="prog">Programmer</span>, <span id="phys">Physicist</span> and <span id="phil">Philosopher</span>.<!-- Need a cool <a style="text-decoration:none; color:green"class="link_about" href="http://www.jacopocolo.com/hottercolder/">weather</a> app?</p> <!-- Big thanks to Jacopo Colo for help with the website as I've learned so much just from doing this with all of his amazing visuals-->
 
-<div id ="3">I started <a id="link_saatchi" class="accordion" href="#" onclick="return false;" title="The Best Company Ever" > 
+<div id ="3">I started <a id="link_saatchi" class="accordion" href="#" onclick="return false;" title="The Best Company Ever"> 
 David's Device Repair</a>;
 <div class="hide">
 <div class="date">(June 2014 - )</div>
@@ -121,7 +121,7 @@ My Favorite
 
 <p id="parcontatti">Looking for a new intern? <a class="contatti" href="mailto:davidawad64(at)gmail.com">Email me!</a>. I'm also on <a class="contatti" href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a>, and <a class="contatti" href="http://linkedin.com/" target="_blank">LinkedIn</a>. Here is my <a class="contatti" href="http://goo.gl/qZ4BlW" target="_blank">resume</a>. </p> 
 
-<p id="parcontatti">Huge thanks to <a class="contatti" href="http://www.jacopocolo.com/" target="_blank">Jacopo Col&ograve;</a> for all his help with this website providing me with the base and inspiration.</p>
+<p id="parcontatti">Huge thanks to <a class="contatti" href="http://www.jacopocolo.com/" target="_blank">Jacopo Col&ograve;</a> for all his help and providing me with a base and inspiration.</p>
 
 
 <div id="simboli"> <a href="#" id="smiley">:)</a>
