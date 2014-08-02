@@ -81,26 +81,30 @@ a#heart {color:#888;}
 #prog::selection {
     display: inline;
     background: red;
+	color:white;
 }
 
 #phys::selection {
     display: inline;
     background: blue;
+	color:white;
 }
 
 #phil::selection {
     display: inline;
     background: yellow;
+    color:white;
 }
 
 #david::selection {
     display: inline;
-    background: blue;
+    background: white;
+    color: rgb(22, 107, 163);
 }
 
 #awad::selection {
     display: inline;
-    background: red;
-
+    background: white;
+    color: rgb(238, 16, 78);
 }
 
