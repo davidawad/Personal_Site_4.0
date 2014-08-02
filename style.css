@@ -120,6 +120,13 @@ a#heart {color:#888;}
     color:white;
 }
 
+#david:hover {
+    color: rgb(22, 107, 163);
+}
+
+#awad:hover {
+    color: rgb(238, 16, 78);
+}
 #david::selection {
     display: inline;
     background: white;
