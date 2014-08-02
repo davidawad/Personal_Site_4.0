@@ -52,7 +52,7 @@
 
 <div id="wrapper">
 
-<p id="1"> My Interests,</p> <img src="" >
+<p id="1"> My Interests,</p> <!--<img src="" > -->
 
 <p id="2">Well, you already know a bit from the home page. I'm a <span id="prog">Programmer</span>, <span id="phys">Physicist</span> and <span id="phil">Philosopher</span>. I'm also a music minor. And a member of the Rutgers University Glee Club.
 

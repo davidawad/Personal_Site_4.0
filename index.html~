@@ -63,7 +63,7 @@ $("#age").html(myage);  <!-- jquery takes the script variable into an html varia
 <li><a href="/interests.html">What I'm up to</a></li>
 <li><a href="https://github.com/davidawad" target="_blank">My <span style="color:rgb(9, 92, 120)">Github</span></a></li> 
 </ul>
-<div style="border-top: 2px solid #3e3e3e; margin: 3% auto;  width: 100%;"></div>
+<div style="border-top: 2px solid #3e3e3e; width: 100%;"></div>
 
 <div id="wrapper">
 
