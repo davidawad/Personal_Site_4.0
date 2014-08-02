@@ -24,7 +24,7 @@ ul {
     margin: 0;
     list-style-type: none;
 }
-b{
+ul li a{
     float: ;
     text-decoration: none;
     color: black;
@@ -33,7 +33,7 @@ b{
     padding: 0.2em 0.6em;
     border-right: 1px solid white;
 }
-b:hover {
+ul li a:hover {
     color: teal;
 }
 
