@@ -99,8 +99,9 @@ a#smiley {color:#888;}
 
 a#heart {text-decoration:none;
 	display:none;}
-a#heart {color:red;}  /*original color was #888 */
+a#heart {color:#888;}  /*original color was #888 */
 
+#khart{color:red;}
 
 #prog::selection {
     display: inline;
