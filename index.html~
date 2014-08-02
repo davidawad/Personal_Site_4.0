@@ -70,7 +70,7 @@ $("#age").html(myage);  <!-- jquery takes the script variable into an html varia
 
 <p id="1"> Hey, I'm <span id="david">David</span> <span id="awad">Awad</span>.</p>
 
-<p id="2">I'm <span id="age"></span> years old. I'm a <span id="prog">Programmer</span>, <span id="phys">Physicist</span> and <span id="phil">Philosopher</span>. Need a cool <a style="text-decoration:none; color:green"class="link_about" href="http://www.jacopocolo.com/hottercolder/">weather</a> app?</p> <!-- Big thanks to Jacopo Colo for help with the website as I've learned so much just from doing this with all of his amazing visuals-->
+<p id="2">I'm <span id="age"></span> years old. I'm a <span id="prog">Programmer</span>, <span id="phys">Physicist</span> and <span id="phil">Philosopher</span>.<!-- Need a cool <a style="text-decoration:none; color:green"class="link_about" href="http://www.jacopocolo.com/hottercolder/">weather</a> app?</p> <!-- Big thanks to Jacopo Colo for help with the website as I've learned so much just from doing this with all of his amazing visuals-->
 
 <div id ="3">I started <a id="link_saatchi" class="accordion" href="#" onclick="return false;">
 David's Device Repair</a>;
