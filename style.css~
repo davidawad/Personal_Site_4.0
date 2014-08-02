@@ -76,3 +76,30 @@ a#smiley {color:#888;}
 a#heart {text-decoration:none;
 	display:none;}
 a#heart {color:#888;}
+
+
+#prog::selection {
+    display: inline;
+    background: red;
+}
+
+#phys::selection {
+    display: inline;
+    background: blue;
+}
+
+#phil::selection {
+    display: inline;
+    background: yellow;
+}
+
+#david::selection {
+    display: inline;
+    background: green;
+}
+
+#awad::selection {
+    display: inline;
+    background: green;
+}
+
