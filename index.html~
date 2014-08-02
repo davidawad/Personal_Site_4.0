@@ -11,10 +11,10 @@
 
 <style>
 
-body::selection {
+body:selection {
   background: #a8d1ff;
 }
-body::-moz-selection {
+body:-moz-selection {
   background: #a8d1ff;
 }
 ul {
@@ -24,7 +24,7 @@ ul {
     margin: 0;
     list-style-type: none;
 }
-#header{
+b{
     float: ;
     text-decoration: none;
     color: black;
@@ -33,7 +33,7 @@ ul {
     padding: 0.2em 0.6em;
     border-right: 1px solid white;
 }
-a:hover {
+b:hover {
     color: teal;
 }
 
@@ -41,8 +41,6 @@ li {
     display: inline;
 }
 </style>
-
-
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -85,7 +83,7 @@ var month = d.getMonth();
 var data = d.getDate();
 if ((month > 5) || (month == 5 && data > 14)) {var myage = year - 1994;}
 else {var myage = (year - 1994 -1)};
-$("#age").html(myage);
+$("#age").html(myage);  <!-- jquery takes the script variable into an html variable!!-->
 }
 );
 </script>
@@ -95,10 +93,10 @@ $("#age").html(myage);
 <body>
 
 <ul>
-<li><a id = "header" href="davidawad.github.io">Home</a></li>
-<li><a id = "header" href="davidawad.github.io/me.html">My Interests</a></li>
-<li><a id = "header" href="davidawad.github.io/interests.html">What I'm up to</a></li>
-<li><a id = "header" href="#">My <span href="https://github.com/davidawad" style="color:yellow">Github</span></b></li> 
+<li><a href="davidawad.github.io">Home</a></li>  <!-- <li><a id = "header" href="davidawad.github.io">Home</a></li>-->
+<li><a href="davidawad.github.io/me.html">My Interests</a></li>
+<li><a href="davidawad.github.io/interests.html">What I'm up to</a></li>
+<li><a href="https://github.com/davidawad">My <span  style="color:yellow">Github</span></a></li> 
 </ul>
 
 <br>
