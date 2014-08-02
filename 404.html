@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>   
+<head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
 <title>404 Error</title>
-<meta name="description" content="David Awad's personal and professional website."> 
-<link rel="shortcut icon" href="images/scirra.ico" type="image/x-icon" />  
+<meta name="description" content="David Awad's personal and professional website.">
+<link rel="shortcut icon" href="images/scirra.ico" type="image/x-icon" />
 <meta name="Keywords" content=" David Awad, copywriter, podcast, blog, Feeder, portfolio, hex clock, android, programming, physics, web development, philosophy" />
 <link rel="stylesheet" type="text/css" href="style.css"/>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
   $(document).ready(function() {
-     
+
     //ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
     $('.accordion').click(function() {
-  
+
       //REMOVE THE ON CLASS FROM ALL BUTTONS
       $('.accordion').removeClass('on');
-        
+
       //NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
        $('.hide').slideUp('fast');
-     
+
       //IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
       if($(this).next().is(':hidden') == true) {
-        
+
         //ADD THE ON CLASS TO THE BUTTON
         $(this).addClass('on');
-          
+
         //OPEN THE SLIDE
         $(this).next().slideDown('fast');
-       } 
-        
+       }
+
      });
-      
+
     $('.accordionContent').hide();
     $('#open').show();
-  
+
   });
-  </script>  
+  </script>
 </head>
 <body>
 <ul>
 <li><a href="/index.html">Home</a></li>  <!-- <li><a id = "header" href="davidawad.github.io">Home</a></li>-->
 <li><a href="/me.html">About Me</a></li>
 <li><a href="/interests.html">What I'm up to</a></li>
-<li><a href="https://github.com/davidawad" target="_blank">My <span style="color:rgb(9, 92, 120)">Github</span></a></li> 
+<li><a href="https://github.com/davidawad" target="_blank">My <span style="color:rgb(9, 92, 120)">Github</span></a></li>
 </ul>
 <div style="border-top: 2px solid #3e3e3e; margin: 1% ; width: 100%;"></div>
 
@@ -53,7 +53,7 @@
 
 <p id="1"> 404 Error.</p>
 
-<audio autoplay> 
+<audio autoplay>
 	<source src="music/wah wah sound effect.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 </audio>
@@ -61,13 +61,13 @@
 <div id ="3">I don't know how that happened. Sorry about that. Here have a <a id="link_resume" class="accordion" href="/res/David Awad.pdf" onclick="return false;" onClick="window.open('/res/David Awad.pdf')" title="The Best Resume Ever">Resume</a>.
 <div class="hide">
 You can get back to the home page <a style="TEXT-DECORATION: NONE; color:teal;"  href="https://davidawad.github.io" title="Thanks!">here</a>. </div>
- 
-<br> 
+
+<br>
 <br>
 
 <div style="border-top: 1px solid #3e3e3e; margin: 3% auto;  width: 100%;"></div>
 
-<p id="parcontatti">Looking for a new intern? <a class="contatti" href="mailto:davidawad64(at)gmail.com">Email me!</a>. I'm also on <a class="contatti" href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a>, and <a class="contatti" href="http://linkedin.com/" target="_blank">LinkedIn</a>. Here is my <a class="contatti" href="/res/David Awad.pdf" target="_blank">resume</a>. </p> 
+<p id="parcontatti">Looking for a new intern? <a class="contatti" href="mailto:davidawad64(at)gmail.com">Email me!</a>. I'm also on <a class="contatti" href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a>, and <a class="contatti" href="https://www.linkedin.com/profile/view?id=328675122&trk=nav_responsive_tab_profile" target="_blank">LinkedIn</a>. Here is my <a class="contatti" href="/res/David Awad.pdf" target="_blank">resume</a>. </p> 
 
 <p id="parcontatti">Huge thanks to <a class="contatti" href="http://www.jacopocolo.com/" target="_blank">Jacopo Col&ograve;</a> for all his help and providing me with a base and inspiration.</p>
 
@@ -86,7 +86,7 @@ return true;
 <script type="text/javascript" src="/script/jquery.fittext.js">
 </script>
 <script type="text/javascript">
-    $("div#wrapper").fitText(1.2, { minFontSize: 14, maxFontSize: '41px' });    
-</script> 
+    $("div#wrapper").fitText(1.2, { minFontSize: 14, maxFontSize: '41px' });
+</script>
 </body>
 </html>
