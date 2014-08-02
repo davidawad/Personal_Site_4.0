@@ -95,11 +95,12 @@ a#heart {color:#888;}
 
 #david::selection {
     display: inline;
-    background: green;
+    background: blue;
 }
 
 #awad::selection {
     display: inline;
-    background: green;
+    background: red;
+
 }
 
