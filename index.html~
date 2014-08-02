@@ -81,7 +81,7 @@ worked for
 <a id="link_pcmagazine" class="accordion" href="#">The Rutgers University Glee Club</a>,
   <div class="hide">
     <div class="date">(jan 2010 - )</div>
-      I'm the current website maintainer and Head Technological Coordinator for the Rutgers <a target="_blank"  href="http://gleeclub.rutgers.edu/~rugc/home/">Glee Club</a>. It's my job make sure that all of the technological aspects of the glee club are in order such as the alumni database.</div>
+      I'm the current website maintainer and Head Technological Coordinator for the Rutgers <a style="color:scarlet" target="_blank"  href="http://gleeclub.rutgers.edu/~rugc/home/">Glee Club</a>. It's my job make sure that all of the technological aspects of the glee club are in order such as the alumni database.</div>
 
 <a id="link_macchianera" class="accordion" href="javaScript:void(0);">PC Warehouse</a>,
   <div class="hide">
@@ -116,7 +116,6 @@ My Favorite
   	Java, HTML, CSS, JavaScript, <span title="oh hey" style="color:rgb(9, 92, 120);">Pyt</span><span title="yep" style="color: rgb(248, 207, 30);">hon</span>, and C. 
   </div>
 
-
 <div style="border-top: 1px solid #3e3e3e; margin: 3% auto;  width: 100%;"></div>
 
 <p id="parcontatti">Looking for a new intern? <a class="contatti" href="mailto:davidawad64(at)gmail.com">Email me!</a>. I'm also on <a class="contatti" href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a>, and <a class="contatti" href="http://linkedin.com/" target="_blank">LinkedIn</a>. Here is my <a class="contatti" href="http://goo.gl/qZ4BlW" target="_blank">resume</a>. </p> 
@@ -139,7 +138,7 @@ return true;
 </script>
 
 <script type="text/javascript">
-    $("div#wrapper").fitText(1.2, { minFontSize: 12, maxFontSize: '41px' });    
+    $("div#wrapper").fitText(1.2, { minFontSize: 14, maxFontSize: '41px' });    
 </script> 
 
 

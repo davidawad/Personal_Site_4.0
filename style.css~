@@ -11,11 +11,15 @@ ul {
 }
 ul li a{
     float: ;
+    text-rendering: optimizeLegibility;
     text-decoration: none;
     color: black;
     font-family: Georgia, Times, Time New Roman, serif;
     background-color: white;
-    padding: 0.2em 0.6em;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    padding-right: 10px ;
+    padding-left: 10px ;
     border-right: 1px solid white;
 }
 ul li a:hover {
