@@ -3,7 +3,7 @@
 <head>   
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
-<title> 404 Error</title>
+<title>404 Error</title>
 <meta name="description" content="David Awad's personal and professional website."> 
 <link rel="shortcut icon" href="images/scirra.ico" type="image/x-icon" />  
 <meta name="Keywords" content=" David Awad, copywriter, podcast, blog, Feeder, portfolio, hex clock, android, programming, physics, web development, philosophy" />
@@ -53,11 +53,11 @@
 
 <p id="1"> 404 Error.</p>
 
-<div id ="3">I don't know how that happened. Sorry about that. Here have a <a id="link_resume" class="accordion" href="#" onclick="return false;" title="The Best Resume Ever">Resume</a>
+<div id ="3">I don't know how that happened. Sorry about that. Here have a <a id="link_resume" class="accordion" href="#" onclick="return false;" title="The Best Resume Ever">Resume</a>.
 <div class="hide">
 You can get back to the home page <a style="TEXT-DECORATION: NONE; color:teal;"  href="https://davidawad.github.io" title="Thanks!">here</a>. </div>
 
-   <audio autoplay> <!--  -->
+   <audio autoplay> 
        <source src="music/wah wah sound effect.mp3" type="audio/mpeg">
        Your browser does not support the <audio> element.
    </audio> 
