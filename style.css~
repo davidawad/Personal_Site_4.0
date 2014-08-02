@@ -43,7 +43,7 @@ div#wrapper {
 	height: auto;
 	max-width: 600px;
 	min-width: 300px;
-	margin-top: 5%;
+	/*margin-top: 5%;*/
 	margin: 0 auto;
 }
 
