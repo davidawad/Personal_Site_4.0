@@ -96,7 +96,7 @@ worked for
   </div>  
 I'm hoping to find a Job in either  
 
-<a id="link_personalreport" class="accordion" href="#"><span id="web">Web Development</span></a>,
+<a title="Wow! much CSS! So Website!" id="link_personalreport" class="accordion" href="#"><span id="web">Web Development</span></a>,
   <div class="hide">
     I would love to do this kind of thing for a living. It's almost like an art form. It's like chipping away at marble until the product looks exactly how you imagined it in your mind. I can really take pride in a product when it comes out exactly the way I want it to. Software is just an amazing field and the internet is by far my favorite part of it.  
       </div> 
@@ -113,7 +113,7 @@ I'm hoping to find a Job in either
 My Favorite 
 <a id="link_linkiesta" class="accordion" href="#" onclick="return false;">Languages</a>.
   <div class="hide">
-  	Java, HTML, CSS, JavaScript, <span title="Python" style="color:rgb(9, 92, 120);">Pyt</span><span title="yep" style="color: rgb(248, 207, 30);">hon</span>, and C. 
+  	Java, HTML, CSS, JavaScript, <span title="oh hey" style="color:rgb(9, 92, 120);">Pyt</span><span title="yep" style="color: rgb(248, 207, 30);">hon</span>, and C. 
   </div>
 
 
