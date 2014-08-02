@@ -77,7 +77,7 @@ a#link_saatchi {color: rgb(2, 193, 164);}
 a#link_pcmagazine {color: rgb(238, 16, 78);}
 a#link_macchianera {color: rgb(0, 100, 137);}
 a#link_radionation {color: rgb(248, 207, 30);}
-a#link_personalreport {color: rgb(48, 51, 54);}
+a#link_personalreport {color:#A8E4A0;}  
 a#link_annamaria {color: rgb(249, 174, 43);}
 a#link_ogilvy {color: rgb(9, 92, 120);}
 a#link_linkiesta {color: rgb(22, 107, 163);}
@@ -99,7 +99,7 @@ a#smiley {color:#888;}
 
 a#heart {text-decoration:none;
 	display:none;}
-a#heart {color:#888;}
+a#heart {color:red;}  /*original color was #888 */
 
 
 #prog::selection {
@@ -120,15 +120,25 @@ a#heart {color:#888;}
     color:white;
 }
 
+#david:hover {
+    color: rgb(22, 107, 163);
+}
+
+#awad:hover {
+    color: rgb(238, 16, 78);
+}
 #david::selection {
     display: inline;
     background: white;
     color: rgb(22, 107, 163);
 }
-
 #awad::selection {
     display: inline;
     background: white;
     color: rgb(238, 16, 78);
 }
+#web:hover {
+    color: rgb(48, 51, 54);
+}
+
 

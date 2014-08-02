@@ -90,14 +90,14 @@ worked for
       I was a device technician at a PC warehouse where I was responsible for fixing any computers that came into the store while also providing occasional sales support to customers.  
   </div> and
 
-<a id="link_radionation" class="accordion" href="#">Edison Township</a>.<!--, nothing after this right now! -->
+<a id="link_Edison" class="accordion" href="#">Edison Township</a>.<!--, nothing after this right now! -->
   <div class="hide">
     <div class="date">(jul 2012 - aug 2012)</div>
       I was an intern for the Mayor of my township for one summer. I attended lots of political events and got to meet state senators and Governor Chris Christie! 
   </div>  
 I'm hoping to find a Job in either  
 
-<a id="link_personalreport" class="accordion" href="#"><span id="web">Web</span> <span id="dev">Development</span></a>,
+<a id="link_personalreport" class="accordion" href="#"><span id="web">Web Development</span></a>,
   <div class="hide">
     I would love to do this kind of thing for a living. It's almost like an art form. It's like chipping away at marble until the product looks exactly how you imagined it in your mind. I can really take pride in a product when it comes out exactly the way I want it to. Software is just an amazing field and the internet is by far my favorite part of it.  
       </div> 
@@ -111,12 +111,10 @@ I'm hoping to find a Job in either
   <div class="hide">
     It could happen. 
   </div>
-
-and <a id="link_linkiesta" class="accordion" href="#" onclick="return false;">Linkiesta</a>.
+My Favorite 
+<a id="link_linkiesta" class="accordion" href="#" onclick="return false;">Languages</a>.
   <div class="hide">
-  <div class="date">(sept 2013 - now)</div>
-    I write about culture and entertainment, edit articles and manage collaborators for one of the major italian online newspaper: 
-    <a class="link_descrizione" href="http://www.linkiesta.it/cultura" target="blank">Linkiesta</a>. I joined the editorial staff with a team that relaunched the culture section, now one of the main traffic sources for the newspaper.
+  	Java, HTML, CSS, JavaScript, <span style="color:rgb(9, 92, 120);">Pyt</span><span sytle="color();">hon</span>, and C. 
   </div>
 
 
@@ -124,7 +122,8 @@ and <a id="link_linkiesta" class="accordion" href="#" onclick="return false;">Li
 
 <p id="parcontatti">Looking for a new intern? <a class="contatti" href="mailto:davidawad64(at)gmail.com">Email me!</a>. I'm also on <a class="contatti" href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a>, and <a class="contatti" href="http://linkedin.com/" target="_blank">LinkedIn</a>. Here is my <a class="contatti" href="http://goo.gl/qZ4BlW" target="_blank">resume</a>. </p> 
 
-<p>Huge thanks to <a class="contatti" href="http://www.jacopocolo.com/" target="_blank">Jacopo Col&ograve;</a> for all his help with this website providing me with the base and inspiration.</p>
+<p id="parcontatti">Huge thanks to <a class="contatti" href="http://www.jacopocolo.com/" target="_blank">Jacopo Col&ograve;</a> for all his help with this website providing me with the base and inspiration.</p>
+
 
 <div id="simboli"> <a href="#" id="smiley">:)</a>
 <a href="#" id="heart">Hand coded with &#10084;</a></div>
