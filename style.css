@@ -127,6 +127,13 @@ a#heart {color:#888;}  /*original color was #888 */
     color:white;
 }
 
+
+#muse::selection {
+    display: inline;
+    background: green;
+    color:white;
+}
+
 #david:hover {
     color: rgb(22, 107, 163);
 }
