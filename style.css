@@ -14,7 +14,7 @@ ul li a{
     text-rendering: optimizeLegibility;
     text-decoration: none;
     color: black;
-    font-size: em ; /*EXPERIMENTAL!!!!*/
+    font-size: 1.3em ; /*EXPERIMENTAL!!!!*/
     font-family: Georgia, Times, Time New Roman, serif;
     /*background-color: white; */
     padding-top: 10px ;
