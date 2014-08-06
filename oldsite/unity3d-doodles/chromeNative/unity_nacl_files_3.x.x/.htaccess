@@ -1,6 +1,0 @@
-<Files *.nexe>
-SetOutputFilter DEFLATE
-</Files>
-<Files *.so>
-SetOutputFilter DEFLATE
-</Files>
