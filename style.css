@@ -2,7 +2,7 @@ body {
 background-color: rgb(255, 255, 255);
 }
 @font-face {
-    font-family: billabong;
+    font-family: 'billabong';
     src: url('/res/billabong.ttf');
 }
 
