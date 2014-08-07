@@ -156,7 +156,7 @@ a#heart {color:#888;}  /*original color was #888 */
 
 /* //////////////////////////////////////////// EXPERIMENTAL ///////////////////////////////////////////   */
 .loader {
-    text-align: right;
+    text-align: center;
 }
 .loader span {
     display: inline-block;
