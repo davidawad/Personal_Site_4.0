@@ -154,7 +154,7 @@ a#heart {color:#888;}  /*original color was #888 */
     color: rgb(48, 51, 54);
 }
 #myCanvas{
-  canvas.width=1200  ;
+  width=1200  ;
 }
 
 /* //////////////////////////////////////////// EXPERIMENTAL ///////////////////////////////////////////   */
