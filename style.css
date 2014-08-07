@@ -96,7 +96,6 @@ a.link_about {
 	color: inherit;
 	text-decoration: underline;
 }
-
 a#smiley {text-decoration:none;
 		webkit-transform: rotate(90deg);
 		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
@@ -157,7 +156,7 @@ a#heart {color:#888;}  /*original color was #888 */
 
 /* //////////////////////////////////////////// EXPERIMENTAL ///////////////////////////////////////////   */
 .loader {
-    text-align: center;
+    text-align: right;
 }
 .loader span {
     display: inline-block;
