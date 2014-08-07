@@ -1,12 +1,11 @@
 var myName = "David Awad!";
 
 var red = [0, 100, 63];
-var yellow =[150,150,0];
+var orange = [40, 100, 60];
 var green = [75, 100, 40];
 var blue = [196, 77, 55];
-var dblue = [22, 107, 163];
-var letterColors = [red,yellow,blue,green,dblue];
-
+var purple = [280, 50, 60];
+var letterColors = [red, orange, green, blue, purple];
 drawName(myName, letterColors);
 bubbleShape = 'circle';
 bounceBubbles();
