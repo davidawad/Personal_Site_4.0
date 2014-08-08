@@ -168,8 +168,18 @@ a#heart {color:#888;}  /*original color was #888 */
 #web:hover {
     color: rgb(48, 51, 54);
 }
-#pyt{font-family:'billabongregular' ;}
-#hon{font-family:'billabongregular' ;}
+#pyt{
+  font-family:'billabongregular' ;
+  font-size: 0.6em ;
+  color:rgb(9, 92, 120);
+  title:"As you can see" ;
+  }
+#hon{
+  font-family:'billabongregular' ;
+  font-size: 0.6em ;
+  color: rgb(248, 207, 30);
+  title: "I like Python" ;
+}
 
 /* //////////////////////////////////////////// EXPERIMENTAL ///////////////////////////////////////////   */
 .loader {
