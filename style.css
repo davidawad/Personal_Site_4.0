@@ -170,13 +170,13 @@ a#heart {color:#888;}  /*original color was #888 */
 }
 #pyt{
   font-family:'billabongregular' ;
-  font-size: 0.6em ;
+  font-size: em ;
   color:rgb(9, 92, 120);
   title:"As you can see" ;
   }
 #hon{
   font-family:'billabongregular' ;
-  font-size: 0.6em ;
+  font-size: em ;
   color: rgb(248, 207, 30);
   title: "I like Python" ;
 }
