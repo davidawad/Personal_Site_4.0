@@ -148,17 +148,22 @@ a#heart {color:#888;}  /*original color was #888 */
     color:white;
 }
 
+#david {
+    font-family:billabongregular;
+}
 #david:hover {
     color: rgb(22, 107, 163);
-}
-
-#awad:hover {
-    color: rgb(238, 16, 78);
 }
 #david::selection {
     display: inline;
     background: white;
     color: rgb(22, 107, 163);
+}
+#awad{
+    font-family:billabongregular;
+}
+#awad:hover {
+    color: rgb(238, 16, 78);
 }
 #awad::selection {
     display: inline;
