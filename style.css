@@ -140,13 +140,16 @@ a#heart {color:#888;}  /*original color was #888 */
     background: yellow;
     color:white;
 }
-
-
 #muse::selection {
     display: inline;
     background: green;
     color:white;
 }
+
+#guestname:hover {
+    color: purple;
+}
+
 
 #david {
     font-family:billabongregular;
