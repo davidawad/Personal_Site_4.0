@@ -50,10 +50,13 @@ var data = d.getDate();
 if ((month > 5) || (month == 5 && data > 14)) {var myage = year - 1994;}
 else {var myage = (year - 1994 -1)};
 $("#age").html(myage);  <!-- jquery takes the script variable into an html variable!!-->
-}
-);
+
 var guest = prompt("Welcome to my site! What's your name?","don't worry the site is open source");
 $("#guestname").html(guest);
+
+}
+);
+
 </script>
 </head>
 <body>
