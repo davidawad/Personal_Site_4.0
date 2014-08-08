@@ -52,6 +52,8 @@ else {var myage = (year - 1994 -1)};
 $("#age").html(myage);  <!-- jquery takes the script variable into an html variable!!-->
 }
 );
+var guest = prompt("Welcome to my site! What's your name?","don't worry the site is open source");
+$("#guestname").html(guest);
 </script>
 </head>
 <body>
@@ -72,7 +74,7 @@ $("#age").html(myage);  <!-- jquery takes the script variable into an html varia
 
 <div id="wrapper">
 
-<p id="1"> Hey, I'm <span id="david">David</span> <span id="awad">Awad</span>.</p>
+<p id="1"> Hey <span id="guestname"></span>, I'm <span id="david">David</span> <span id="awad">Awad</span>.</p>
 
 <p id="2">I'm <span id="age"></span> years old. I'm a <span id="prog">Programmer</span>, <span id="phys">Physicist</span>, <span id="phil">Philosopher</span>, and <span id="muse">Musician</span>.<!-- Need a cool <a style="text-decoration:none; color:green"class="link_about" href="http://www.jacopocolo.com/hottercolder/">weather</a> app?</p> <!-- Big thanks to Jacopo Colo for help with the website as I've learned so much just from doing this with all of his amazing visuals-->
 
@@ -118,7 +120,7 @@ My Favorite
 <a id="link_linkiesta" class="accordion" href="#" onclick="return false;">Languages</a>.
   <div class="hide">
   	Java, HTML, CSS, JavaScript, <span id="pyt" title="oh hey" style="color:rgb(9, 92, 120);font-family:billabongregular">Pyt</span><span id="hon" title="yep" style="color: rgb(248, 207, 30);font-family:billabongregular">hon</span>, and C.
-  </div>Thanks for visiting!
+  </div>
 
 <div style="border-top: 1px solid #3e3e3e; margin: 3% auto;  width: 100%;"></div>
 
