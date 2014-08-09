@@ -178,16 +178,27 @@ a#heart {color:#888;}  /*original color was #888 */
 }
 #pyt{
   font-family:'billabongregular' ;
-  font-size: em ;
+  font-size: 1.2em ;
   color:rgb(9, 92, 120);
-  title:"As you can see" ;
+  title:"As you can see..." ;
+  }
+#pyt::selection{
+  background: white;
+  color:rgb(9, 92, 120);
+  display: inline;
+  background: red;
   }
 #hon{
   font-family:'billabongregular' ;
-  font-size: em ;
+  font-size: 1.2em ;
   color: rgb(248, 207, 30);
   title: "I like Python" ;
 }
+#hon::selection{
+  color: rgb(248, 207, 30);
+  title: "I like Python" ;
+  display: inline;
+  background: red;}
 
 /* //////////////////////////////////////////// EXPERIMENTAL ///////////////////////////////////////////   */
 .loader {
