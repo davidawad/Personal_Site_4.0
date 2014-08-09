@@ -159,7 +159,7 @@ a#heart {color:#888;}  /*original color was #888 */
 }
 #david::selection {
     display: inline;
-    background: white;
+    background: rgb(255, 255, 255);
     color: rgb(22, 107, 163);
 }
 #awad{
@@ -170,7 +170,7 @@ a#heart {color:#888;}  /*original color was #888 */
 }
 #awad::selection {
     display: inline;
-    background: white;
+    background: rgb(255, 255, 255);;
     color: rgb(238, 16, 78);
 }
 #web:hover {
@@ -199,7 +199,7 @@ a#heart {color:#888;}  /*original color was #888 */
   color: rgb(248, 207, 30);
   title: "Lot" ;
   display: inline;
-  background: color: rgb(255, 255, 255)}
+  background: rgb(255, 255, 255);}
 
 /* //////////////////////////////////////////// EXPERIMENTAL ///////////////////////////////////////////   */
 .loader {
