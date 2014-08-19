@@ -175,7 +175,7 @@ a#heart {color:#888;}  /*original color was #888 */
     background: rgb(255, 255, 255);;
     color: rgb(238, 16, 78);
 }
-#web:hover {
+.accordion:hover {
     color: rgb(48, 51, 54);
 }
 #pyt{
