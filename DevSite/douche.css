@@ -1,0 +1,15 @@
+#header{
+	margin:0 auto;
+	text-align:center;
+}
+ul {
+    float: center;
+    width: 100%;
+    padding: 0;
+    margin: 3%;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
