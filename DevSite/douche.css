@@ -1,3 +1,10 @@
+
+
+p::selection {
+background-color: #0099cc;
+color: #fff;
+}
+
 #header{
 	margin:0 auto;
 	text-align:center;
