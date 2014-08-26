@@ -5,15 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>David's Device Repair</title>
 <link rel="stylesheet" href="css/foundation.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
 <link rel="stylesheet" href="douche.css"/>
 <script src="js/vendor/modernizr.js"></script>
-</head>
 
-<body bgcolor="#FF0000"> 
+<body bgcolor="#FF0000">
 <div class="row">
 <div class="large-12 columns">
-<h1>Welcome to David's Device Repair!</h1>
+
 </div>
+<h1>Welcome to David's Device Repair!</h1>
 </div>
 
 </head>
@@ -22,7 +24,7 @@
 <div id="header">  <!--This is the header menu of the page -->
 
 <ul>
-<li><a href="/index.html">Home</a></li>  
+<li><a href="/index.html">Home</a></li>
 <li><a href="/model.html">Pricing Model</a></li>
 <li><a href="/ "> </a></li>
 <li><a href="/contact.html">Contact us</a></li> <!-- doesn't exist yet -->
@@ -31,7 +33,7 @@
 </ul>
 
 
-    
+
     <div class="row">
       <div class="large-12 columns">
       	<div class="panel">
@@ -47,7 +49,7 @@
 	        	</div>
 	        	<div class="large-4 medium-4 columns">
 	        		<p><a href="/contact.html">Something Else?</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-	        	</div>        
+	        	</div>
 					</div>
       	</div>
       </div>
@@ -57,46 +59,46 @@
       <div class="large-8 medium-8 columns">
         <h5>Here&rsquo;s your basic grid:</h5>
         <!-- Grid Example -->
+<script>
+$('#yourButtonId').click(function() {
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
+$.ajax({
+  type: “POST”,
+  url: “https://mandrillapp.com/api/1.0/messages/send.json”,
+  data: {
+    ‘key’: ‘PHZjzUZUBB6K3RK-QI1rNg’,
+    ‘message’: {
+      ‘from_email’: ‘davidawad64@gmail.com’,
+      ‘to’: [
+          {
+            ‘email’: ‘davidawad64@gmail.com’,
+            ‘name’: ‘ david awad’,
+            ‘type’: ‘to’
+          },
+          {
+            ‘email’: ‘RECIPIENT_NO_2@EMAIL.HERE’,
+            ‘name’: ‘ANOTHER RECIPIENT NAME (OPTIONAL)’,
+            ‘type’: ‘to’
+          }
+        ],
+      ‘autotext’: ‘true’,
+      ‘subject’: ‘YOUR SUBJECT HERE!’,
+      ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
+
+    }
+  }
+
+ }).done(function(response) {
+   console.log(response); // if you're into that sorta thing
+ });
+
+</script>
+
+$('#myForm').submit
+
+
+
+
         <h5>We bet you&rsquo;ll need a form somewhere:</h5>
         <form>
 				  <div class="row">
@@ -156,24 +158,24 @@
 				    </div>
 				  </div>
 				</form>
-      </div>     
+      </div>
 
       <div class="large-4 medium-4 columns">
 			  <h5>Try one of these buttons:</h5>
 			  <p><a href="#" class="small button">Simple Button</a><br/>
         <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
+        <a href="#" class="small round button">Round Button</a><br/>
         <a href="#" class="medium success button">Success Btn</a><br/>
         <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
+        <a href="#" class="medium secondary button">Secondary Btn</a></p>
 				<div class="panel">
         	<h5>So many components, girl!</h5>
         	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
         </div>
       </div>
     </div>
-    
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
