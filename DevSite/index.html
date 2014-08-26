@@ -4,34 +4,28 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>David's Device Repair</title>
+<link rel="apple-touch-icon" href="/common/img/apple-touch-icon.png"/>
+<link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="css/foundation.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <link rel="stylesheet" href="douche.css"/>
 <script src="js/vendor/modernizr.js"></script>
 
-<body bgcolor="#FF0000">
-<div class="row">
-<div class="large-12 columns">
-
 </div>
-<h1>Welcome to David's Device Repair!</h1>
-</div>
-
 </head>
 <body>
-
 <div id="header">  <!--This is the header menu of the page -->
-
+<h1><span style="font-family:amplify,Georgia ; color:#007095">David's Device Repair!<span></h1>
 <ul>
-<li><a href="/index.html">Home</a></li>
-<li><a href="/model.html">Pricing Model</a></li>
+<li><a href="/index.html" class="small radius button">Home</a></li>
+<li><a href="/model.html" class="small radius button">Pricing Model</a></li>
 <li><a href="/ "> </a></li>
-<li><a href="/contact.html">Contact us</a></li> <!-- doesn't exist yet -->
-<li><a href="https://github.com/davidawad" target="_blank">My <span style="color:rgb(9, 92, 120)">Github</span></a></li>
+<li><a href="/contact.html" class="small radius button">Contact us</a></li> <!-- doesn't exist yet -->
+
 <li><a href="http://google.com" class="small radius button">Off to google!</a><li>
 </ul>
-
+</div>
 
 
     <div class="row">
@@ -57,11 +51,11 @@
 
     <div class="row">
       <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-<script>
-$('#yourButtonId').click(function() {
 
+
+<script>
+
+$('#SendB').click(function() {
 $.ajax({
   type: “POST”,
   url: “https://mandrillapp.com/api/1.0/messages/send.json”,
@@ -75,7 +69,7 @@ $.ajax({
             ‘name’: ‘ david awad’,
             ‘type’: ‘to’
           },
-          {
+          {    //i want to remove the second recip. block
             ‘email’: ‘RECIPIENT_NO_2@EMAIL.HERE’,
             ‘name’: ‘ANOTHER RECIPIENT NAME (OPTIONAL)’,
             ‘type’: ‘to’
@@ -83,7 +77,7 @@ $.ajax({
         ],
       ‘autotext’: ‘true’,
       ‘subject’: ‘YOUR SUBJECT HERE!’,
-      ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
+      ‘html’: $('#EMbody').submit
 
     }
   }
@@ -92,87 +86,34 @@ $.ajax({
    console.log(response); // if you're into that sorta thing
  });
 
+
+});
 </script>
 
-$('#myForm').submit
 
-
-
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+        <h5>Send Us an <span style="color:red">Email</span>!</h5>
         <form>
 				  <div class="row">
 				    <div class="large-12 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-12.columns" />
+				      <label>To:</label>
+				      <input type="text" placeholder="management.devicerepair@gmail.com" />
 				    </div>
 				  </div>
-				  <div class="row">
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <div class="row collapse">
-				        <label>Input Label</label>
-				        <div class="small-9 columns">
-				          <input type="text" placeholder="small-9.columns" />
-				        </div>
-				        <div class="small-3 columns">
-				          <span class="postfix">.com</span>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Select Box</label>
-				      <select>
-				        <option value="husker">Husker</option>
-				        <option value="starbuck">Starbuck</option>
-				        <option value="hotdog">Hot Dog</option>
-				        <option value="apollo">Apollo</option>
-				      </select>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-6 medium-6 columns">
-				      <label>Choose Your Favorite</label>
-				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-				    </div>
-				    <div class="large-6 medium-6 columns">
-				      <label>Check these out</label>
-				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Textarea Label</label>
-				      <textarea placeholder="small-12.columns"></textarea>
-				    </div>
-				  </div>
-				</form>
-      </div>
 
-      <div class="large-4 medium-4 columns">
-			  <h5>Try one of these buttons:</h5>
-			  <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>
-				<div class="panel">
-        	<h5>So many components, girl!</h5>
-        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
-        </div>
+				  <div class="row">
+				    <div class="large-12 columns">
+				      <label>Body</label>
+				      <textarea id="EMbody" placeholder="Tell us whatever you want, be it hello or that you think we look bad in skinny jeans. We won't take offense, we promise."></textarea>
+				    </div>
+				  </div>
+        </form>
+
+
+      <div class="row">
+			  <p><a href="#" id ="SendB" class="Large alert button">No Thanks</a>
+          <a href="#" class="Large success button">Send!</a>
+        <br>
+
       </div>
     </div>
 
@@ -182,7 +123,13 @@ $('#myForm').submit
       $(document).foundation();
     </script>
 
-<a href="#" class="small radius button">Radius Button</a><br/>
+<!-- <div class="panel">
+  <h5>So many components, girl!</h5>
+  <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
+  <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
+</div> -->
+
+<a href="#" class="small radius button">THe buttons!</a><br/>
 
   </body>
 </html>
