@@ -1,6 +1,6 @@
 davidawad.github.io
 ===================
 
-this is a simple project i made as a personal webpage. I have been sharing it  wih friends family and potential employers to demonstrate my abilities as a programmer.
+This is a simple project I made as a personal web page. I have been sharing it with friends family and potential employers to demonstrate my abilities as a Web Developer.
 
 ##Thanks for Looking!##
