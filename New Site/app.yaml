@@ -1,0 +1,16 @@
+application: kylejson1
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /(.*\.(gif|png|jpg|ico|js|css|eot|svg|ttf|woff|mp4|webm|ogv|fla|swf|pdf))
+  static_files: \1
+  upload: (.*\.(gif|png|jpg|ico|js|css|eot|svg|ttf|wof|mp4|webm|ogv|fla|swf|pdf))
+
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt 
+
+- url: .*
+  script: main.py
