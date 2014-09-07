@@ -1,10 +1,12 @@
-kylejson.com
+davidawad.com
 ============
 
-My portfolio website [kylejson.com](https://www.kylejson.com).
+My portfolio website [davidawad.com](https://www.davidawad.com).
 
-Here's a snapshot of the PSD design of the site
+Here's a thing
 
 ![alt text](http://www.kylejson.com/img/v2_DRAFT1.png "Redesign Draft 1")
 
-Here's a link to my [Previous iteration of the site](http://eden.rutgers.edu/~kylejohn/kylejson1/)
+My old website [davidawad.github.io](davidawad.github.io).
+
+I literally have no idea what is rendering these pictures right now. 
