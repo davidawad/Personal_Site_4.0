@@ -45,10 +45,10 @@ ul li a{
     font-size: 1.2em ; /*EXPERIMENTAL!!!!*/
     font-family: Georgia, Times, Time New Roman, serif;
     /*background-color: white; */
-    padding-top: 0px ;
-    padding-bottom: 0px ;
-    padding-right: 10px ;
-    padding-left: 10px ;
+    padding-top:0;
+    padding-bottom:0;
+    padding-right:10px ;
+    padding-left:10px ;
     border-right: 1px solid white;
 }
 ul li a:hover {
