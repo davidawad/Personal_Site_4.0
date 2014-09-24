@@ -12,35 +12,27 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
   $(document).ready(function() {
-
     //ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
     $('.accordion').click(function() {
-
       //REMOVE THE ON CLASS FROM ALL BUTTONS
       $('.accordion').removeClass('on');
-
       //NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
        $('.hide').slideUp('fast');
-
       //IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
-      if($(this).next().is(':hidden') == true) {
-
+      if($(this).next().is(':hidden') === true) {
         //ADD THE ON CLASS TO THE BUTTON
         $(this).addClass('on');
-
         //OPEN THE SLIDE
         $(this).next().slideDown('fast');
        }
-
      });
-
     $('.accordionContent').hide();
     $('#open').show();
-
   });
   </script>
 </head>
 <body>
+<div id="header">
 <ul>
 <li><a href="/index.html">Home</a></li>  <!-- <li><a id = "header" href="davidawad.github.io">Home</a></li>-->
 <li><a href="/me.html">About Me</a></li>
@@ -48,7 +40,7 @@
 <li><a href="https://github.com/davidawad" target="_blank">My <span style="color:rgb(9, 92, 120)">Github</span></a></li>
 </ul>
 <!-- <div style="border-top: 2px solid #3e3e3e; margin: 1% ; width: 100%;"></div> -->
-
+</div>
 <div id="wrapper">
 
 <p id="1"> 404 Error.</p>

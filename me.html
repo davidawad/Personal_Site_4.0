@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="images/scirra.ico" type="image/x-icon" />
 <meta name="Keywords" content=" David Awad, copywriter, podcast, blog, Feeder, portfolio, hex clock, android, programming, physics, web development, philosophy" />
 <link rel="stylesheet" type="text/css" href="style.css"/>
-<!-- My Coding Philosophy
+<!-- My Coding Philosophy :
           (      (        )      )                    (      (                         )   (         )  (
    (      )\ )   )\ )  ( /(   ( /(  (          (      )\ )   )\ )  *   )   (  (     ( /(   )\ )   ( /(  )\ )
    )\    (()/(  (()/(  )\())  )\()) )\ )       )\    (()/(  (()/(` )  /(   )\))(   ')\()) (()/(   )\())(()/(
@@ -24,53 +24,41 @@ yes that's a custom view-source-only favicon for you chrome users
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
   $(document).ready(function() {
-
     //ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
     $('.accordion').click(function() {
-
       //REMOVE THE ON CLASS FROM ALL BUTTONS
       $('.accordion').removeClass('on');
-
       //NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
        $('.hide').slideUp('fast');
-
       //IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
       if($(this).next().is(':hidden') === true) {
-
         //ADD THE ON CLASS TO THE BUTTON
         $(this).addClass('on');
-
         //OPEN THE SLIDE
         $(this).next().slideDown('fast');
        }
-
      });
-
     $('.accordionContent').hide();
     $('#open').show();
-
   });
   </script>
 </head>
 <body>
 
+<div id="header">
 <ul>
 <li><a href="/index.html">Home</a></li>  <!-- <li><a id = "header" href="davidawad.github.io">Home</a></li>-->
 <li><a href="/me.html">About Me</a></li>
 <!--<li><a href="/fun.html">Fun Stuff</a></li>
-<!--<li><a href="/pokedex.html">Pokedex</a></li> Coming Eventually!!
+<li><a href="/pokedex.html">Pokedex</a></li> Coming Eventually!!
 <li><a href="http://www.jacopocolo.com/hottercolder/">Weather</a></li> -->
 <li><a href="https://github.com/davidawad" target="_blank">My <span style="color:rgb(9, 92, 120)">Github</span></a></li>
 </ul>
-
-<!--
-<div style="border-top: 2px solid #3e3e3e; margin:1% ; width: 100%;"></div>
--->
+</div>
 
 <div id="wrapper">
 
-<p id="1"> My Interests,</p> <!--<img src="" > -->
-
+<p id="1"> My Interests,</p>
 <p id="2">Well, you already know a bit from the home page. I'm a <span id="prog">Programmer</span>, <span id="phys">Physicist</span> and <span id="phil">Philosopher</span>. I'm also a music minor. And a member of the Rutgers University Glee Club.
 
 <div id ="3">I started singing in High School. Here are a few <a id="link_saatchi" class="accordion" href="#" onclick="return false;" title="The Best Soloists ever">
