@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#wrapper').fadeTo('slow',100);
-    $('#header').fadeTo('slow',100);
+    $('#header').fadein('slow');
   //fade controls for the menu
     $('#home').mouseenter(function() { //fade  the other two buttons
         $('#about').fadeTo('fast',0.50);
@@ -29,6 +29,9 @@ $(document).ready(function() {
     $('#github').mouseleave(function() { //un-fade the other two buttons
         $('#home').fadeTo('fast',100);
         $('#about').fadeTo('fast',100);
+    });
+    $("#link_resume").click(function(){ //function for resume button on the 404 page.
+      window.open("/res/David Awad.pdf");
     });
 
 });
