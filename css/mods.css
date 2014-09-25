@@ -1,0 +1,78 @@
+#prog::selection {
+    display: inline;
+    background: red;
+	color:white;
+}
+
+#phys::selection {
+    display: inline;
+    background: blue;
+	color:white;
+}
+
+#phil::selection {
+    display: inline;
+    background: yellow;
+    color:white;
+}
+#muse::selection {
+    display: inline;
+    background: green;
+    color:white;
+}
+
+#guestname:hover {
+    color: purple;
+}
+
+
+#david {
+    font-family:billabongregular;
+}
+#david:hover {
+    color: rgb(22, 107, 163);
+}
+#david::selection {
+    display: inline;
+    background: rgb(255, 255, 255);
+    color: rgb(22, 107, 163);
+}
+#awad{
+    font-family:billabongregular;
+}
+#awad:hover {
+    color: rgb(238, 16, 78);
+}
+#awad::selection {
+    display: inline;
+    background: rgb(255, 255, 255);;
+    color: rgb(238, 16, 78);
+}
+#mouse:hover {
+    color: rgb(48, 51, 54);
+}
+#pyt{
+  font-family:'billabongregular' ;
+  font-size: 1.2em ;
+  color:rgb(9, 92, 120);
+  title:"As you can see..." ;
+  }
+#pyt::selection{
+  background: white;
+  color:rgb(9, 92, 120);
+  display: inline;
+  background: rgb(255, 255, 255);
+  title:"A" ;
+  }
+#hon{
+  font-family:'billabongregular' ;
+  font-size: 1.2em ;
+  color: rgb(248, 207, 30);
+  title: "I like Python" ;
+}
+#hon::selection{
+  color: rgb(248, 207, 30);
+  title: "Lot" ;
+  display: inline;
+  background: rgb(255, 255, 255);}
+

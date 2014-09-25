@@ -1,11 +1,12 @@
 $(document).ready(function() {
     //$('#wrapper').fadein('slow');
     //$('#header').fadein('slow');
-  //fade controls for the menu
+    
     $('#home').mouseenter(function() { //fade  the other two buttons
         $('#about').fadeTo('slow',0.50);
         $('#github').fadeTo('slow',0.50);
     });
+
     $('#home').mouseleave(function() { //un-fade the other two buttons
         $('#about').fadeTo('slow',100);
         $('#github').hide('slow',100);
@@ -16,9 +17,10 @@ $(document).ready(function() {
         $('#home').fadeTo('slow',0.50); //fade  the other two buttons
         $('#github').fadeTo('slow',0.50);
     });
+
     $('#about').mouseleave(function() { //un-fade the other two buttons
-        $('#github').fadeTo('slow',100);
         $('#home').fadeTo('slow',100);
+        $('#github').fadeTo('slow',100);
     });
 
     //for the my github button
@@ -26,6 +28,7 @@ $(document).ready(function() {
         $('#home').fadeTo('slow',0.50);
         $('#about').fadeTo('slow',0.50);
     });
+
     $('#github').mouseleave(function() { //un-fade the other two buttons
         $('#home').fadeTo('slow',100);
         $('#about').fadeTo('slow',100);
