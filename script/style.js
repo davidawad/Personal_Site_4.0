@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('#wrapper').fadein('slow');
-    $('#header').fadein('slow');
+    //$('#wrapper').fadein('slow');
+    //$('#header').fadein('slow');
 
   //fade controls for the menu
     $('#home').mouseenter(function() { //fade  the other two buttons
