@@ -3,12 +3,12 @@ $(document).ready(function() {
 
   //fade controls for the menu
     $('#home').mouseenter(function() { //fade  the other two buttons
-        //$('about').fadeTo('fast',0.50);
-        //$('github').fadeTo('fast',0.50);
-        $('#home').fadeTo('fast',0.50);
+        $('#about').fadeTo('fast',0.50);
+        $('#github').fadeTo('fast',0.50);
+        $('#home').fadeTo('fast',100);
     });
     $('home').mouseleave(function() { //un-fade the other two buttons
-        //$('about').fadeTo('fast',100);
+        $('#about').fadeTo('fast',100);
         $('#github').hide('fast',100);
         $('#home').fadeTo('fast',100);
     });
