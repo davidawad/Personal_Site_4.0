@@ -2,15 +2,15 @@ $(document).ready(function() {
     $('body').fadeTo('slow',100);
 
   //fade controls for the menu
-    $('home').mouseenter(function() { //fade  the other two buttons
+    $('#home').mouseenter(function() { //fade  the other two buttons
         //$('about').fadeTo('fast',0.50);
         //$('github').fadeTo('fast',0.50);
-        $('home').fadeTo('fast',0.50);
+        $('#home').fadeTo('fast',0.50);
     });
     $('home').mouseleave(function() { //un-fade the other two buttons
         //$('about').fadeTo('fast',100);
-        //$('github').fadeTo('fast',100);
-        $('home').fadeTo('fast',100);
+        $('#github').hide('fast',100);
+        $('#home').fadeTo('fast',100);
     });
 
     //for the about me button
