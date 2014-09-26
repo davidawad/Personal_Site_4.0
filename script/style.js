@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     //$h1 = $('<p>I am the King</p>');
     //$('body').append($h1);
-
+    //$('#two').after('<p>shit in tag</p>');
 
     $('#home').mouseenter(function() { //fade  the other two buttons
         $('#about').fadeTo('slow',0.50);
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     $('#home').mouseleave(function() { //un-fade the other two buttons
         $('#about').fadeTo('slow',100);
-        $('#github').hide('slow',100);
+        $('#github').fadeTo('slow',100);
     });
 
     //for the about me button
