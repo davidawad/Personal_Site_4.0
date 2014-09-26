@@ -33,12 +33,9 @@ background-color: rgb(255, 255, 255);
 ul {
     float: center;
     width: 100%;
-    padding: 0;
-    margin: 0;
     list-style-type: none;
 }
 ul li a{
-    float: ;
     text-rendering: optimizeLegibility;
     text-decoration: none;
     color: black;
