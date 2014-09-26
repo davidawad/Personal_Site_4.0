@@ -21,7 +21,7 @@ body {background-color: rgb(255, 255, 255);}
     font-style: normal;
 
 }
-#header{position:fixed;} 
+#header{position:fixed;}
 ul {
     float: center;
     width: 100%;
@@ -109,6 +109,6 @@ a#smiley {color:#888;}
 
 a#heart {text-decoration:none;
 	display:none;}
-a#heart {color:#888;}  /*original color was #888 */
+a#heart {color:#888;}
 
 #khart{color:red;}
