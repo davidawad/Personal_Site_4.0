@@ -44,4 +44,21 @@ $(document).ready(function() {
       window.open("/res/David Awad.pdf");
     });
 
+      //ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
+      $('.accordion').click(function() {
+        //REMOVE THE ON CLASS FROM ALL BUTTONS
+        $('.accordion').removeClass('on');
+        //NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
+         $('.hide').slideUp('fast');
+        //IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
+        if($(this).next().is(':hidden') === true) {
+          //ADD THE ON CLASS TO THE BUTTON
+          $(this).addClass('on');
+          //OPEN THE SLIDE
+          $(this).next().slideDown('fast');
+         }
+       });
+      $('.accordionContent').hide();
+      $('#open').show();
+
 });

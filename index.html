@@ -25,7 +25,7 @@
 
 yes that's a second favicon for you chrome users
 -->
-<script>
+<!-- <script>
   $(document).ready(function() {
     //ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
     $('.accordion').click(function() {
@@ -44,7 +44,7 @@ yes that's a second favicon for you chrome users
     $('.accordionContent').hide();
     $('#open').show();
   });
-</script>
+</script> -->
 
 <script type="text/javascript">
 $(document).ready(function myFunction()
@@ -58,22 +58,12 @@ else {myage = (year - 1994 -1); }
 $("#age").html(myage) ;
 
 var guest = prompt("Welcome to my site! What's your name?","don't worry this website is open source");
-if(guest==="Shweta"||guest==="shweta"){ //special code for my girlfriend.
+if(guest.toLowerCase()==="shweta"){ //special code for my girlfriend.
   guest="Shweta I Love You" ;
 }
-
 $("#guestname").html(guest);
-
-}
-);
-
+});
 </script>
-<script>
-setTimeout( function(){
-    // Do something after 1 second
-    alert('click the colored text!') ;
-  }
- </script>
 </head>
 <body>
 <!--  banner
