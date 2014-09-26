@@ -61,4 +61,18 @@ $(document).ready(function() {
       $('.accordionContent').hide();
       $('#open').show();
 
-});
+      var d = new Date();
+      var year = d.getFullYear();
+      var month = d.getMonth();
+      var data = d.getDate();
+      if ((month > 5) || (month == 5 && data > 14)) {var myage = year - 1994;}
+      else {myage = (year - 1994 -1); }
+      $("#age").html(myage) ;
+      var guest = prompt("Welcome to my site! What's your name?","don't worry this website is open source");
+      if(guest.toLowerCase()==="shweta"){ //special code for my girlfriend.
+        guest="Shweta I Love You" ;
+      }
+      $("#guestname").html(guest);
+
+
+});  //EOF
