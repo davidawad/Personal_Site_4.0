@@ -1,33 +1,35 @@
 $(document).ready(function() {
     //$('#wrapper').fadein('slow');
     //$('#header').fadein('slow');
-
     //$h1 = $('<p>I am the King</p>');
     //$('body').append($h1);
     //$('#two').after('<p>shit in tag</p>');
+    //$('p').remove();
+    $('.accordion mouse').mouseenter(function() { //fade  the other two buttons
+        $('.accordion mouse').fadeTo('slow',0.50);
+    });
+    $('.accordion mouse').mouseleave(function() { //un-fade the other two buttons
+        $('.accordion mouse').fadeTo('slow',100);
+    });
 
     $('#home').mouseenter(function() { //fade  the other two buttons
         $('#about').fadeTo('slow',0.50);
         $('#github').fadeTo('slow',0.50);
     });
-
     $('#home').mouseleave(function() { //un-fade the other two buttons
         $('#about').fadeTo('slow',100);
         $('#github').fadeTo('slow',100);
     });
-
     //for the about me button
     $('#about').mouseenter(function() {
         $('#home').fadeTo('slow',0.50); //fade  the other two buttons
         $('#github').fadeTo('slow',0.50);
     });
-
     $('#about').mouseleave(function() { //un-fade the other two buttons
         $('#home').fadeTo('slow',100);
         $('#github').fadeTo('slow',100);
     });
-
-    //for the my github button
+    //for the github button
     $('#github').mouseenter(function() { //fade  the other two buttons
         $('#home').fadeTo('slow',0.50);
         $('#about').fadeTo('slow',0.50);
