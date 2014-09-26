@@ -5,12 +5,6 @@ $(document).ready(function() {
     //$('body').append($h1);
     //$('#two').after('<p>shit in tag</p>');
     //$('p').remove();
-    $('#logo').mouseenter(function() { //for the d-brace
-    console.log("got here maestro");
-    $("#logo").html("avid Awad");
-    });
-
-
     $('.accordion mouse').mouseenter(function() { //fade  the other two buttons
         $('.accordion mouse').fadeTo('slow',0.50);
     });
