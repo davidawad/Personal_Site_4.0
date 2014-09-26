@@ -1,7 +1,11 @@
 $(document).ready(function() {
     //$('#wrapper').fadein('slow');
     //$('#header').fadein('slow');
-    
+
+    //$h1 = $('<p>I am the King</p>');
+    //$('body').append($h1);
+
+
     $('#home').mouseenter(function() { //fade  the other two buttons
         $('#about').fadeTo('slow',0.50);
         $('#github').fadeTo('slow',0.50);
