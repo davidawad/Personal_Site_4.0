@@ -6,7 +6,8 @@ $(document).ready(function() {
     //$('#two').after('<p>shit in tag</p>');
     //$('p').remove();
     $('#logo').mouseenter(function() { //for the d-brace
-    $("brace0233").before("avid Awad");
+    console.log("got here maestro");
+    $("#logo").html("avid Awad");
     });
 
 
