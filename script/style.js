@@ -5,6 +5,11 @@ $(document).ready(function() {
     //$('body').append($h1);
     //$('#two').after('<p>shit in tag</p>');
     //$('p').remove();
+    $('#logo').mouseenter(function() { //for the d-brace
+    $("brace0233").before("avid Awad");
+    });
+
+
     $('.accordion mouse').mouseenter(function() { //fade  the other two buttons
         $('.accordion mouse').fadeTo('slow',0.50);
     });
@@ -71,6 +76,13 @@ $(document).ready(function() {
       var guest = prompt("Welcome to my site! What's your name?","don't worry this website is open source");
       if(guest.toLowerCase()==="shweta"){ //special code for my girlfriend.
         guest="Shweta I Love You" ;
+      }
+      if(guest.toLowerCase()==="admin"){ //special code for my girlfriend.
+        var pass = prompt("What is the password?","I have no password") ;
+        if(pass==="cholo"){
+          alert("Hello Master");
+        }
+
       }
       $("#guestname").html(guest);
 
