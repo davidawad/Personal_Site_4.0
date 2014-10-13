@@ -1,3 +1,9 @@
+/*body { 
+cursor: url(/images/tinkerbell.cur), auto; 
+} */
+*body{
+ cursor: url(/images/bluecur.ani),auto;
+}
 #prog::selection {
     display: inline;
     background: red;
@@ -26,8 +32,6 @@
 #guestname:hover {
     color: purple;
 }
-
-
 #david {
     font-family:billabongregular;
 }
