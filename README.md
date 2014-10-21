@@ -1,5 +1,4 @@
 #[davidawad.github.io](davidawad.github.io)
-===================
 
 
 This is a simple project I made as my first website. I have been sharing it with friends family and potential employers to demonstrate my abilities as a Web Developer.
