@@ -1,130 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- My Coding Philosophy
-          (      (        )      )                    (      (                         )   (         )  (
-   (      )\ )   )\ )  ( /(   ( /(  (          (      )\ )   )\ )  *   )   (  (     ( /(   )\ )   ( /(  )\ )
-   )\    (()/(  (()/(  )\())  )\()) )\ )       )\    (()/(  (()/(` )  /(   )\))(   ')\()) (()/(   )\())(()/(
-((((_)(   /(_))  /(_))((_)\  ((_)\ (()/(    ((((_)(   /(_))  /(_))( )(_)) ((_)()\ )((_)\   /(_))|((_)\  /(_))
- )\ _ )\ (_))   (_))    ((_)  _((_) /(_))_   )\ _ )\ (_))   (_)) (_(_())  _(())\_)() ((_) (_))  |_ ((_)(_))
- (_)_\(_)/ __|  | |    / _ \ | \| |(_)) __|  (_)_\(_)/ __|  |_ _||_   _|  \ \((_)/ // _ \ | _ \ | |/ / / __|
-  / _ \  \__ \  | |__ | (_) || .` |  | (_ |   / _ \  \__ \   | |   | |     \ \/\/ /| (_) ||   /   ' <  \__ \
- /_/ \_\ |___/  |____| \___/ |_|\_|   \___|  /_/ \_\ |___/  |___|  |_|      \_/\_/  \___/ |_|_\  _|\_\ |___/
-
-
-yes that's a second favicon for you chrome users 柔道
--->
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
-<title>David Awad | College Student</title>
-<meta name="description" content="David Awad's personal and professional website.">
-<link rel="shortcut icon" href="images/scirra.ico" type="image/x-icon" />
-<meta name="Keywords" content=" David Awad, copywriter, podcast, blog, Feeder, portfolio, hex clock, android, programming, physics, web development, philosophy" />
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<link rel="stylesheet" type="text/css" href="css/mods.css"/>
-<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
-<script type='text/javascript' src='script/style.js'></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'> <!-- here's a comment aboutthe font eing for he newaleter -->
+
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+
+<title>David Awad | Person</title>
 </head>
 <body>
-<div id="header">
-<ul>
-<!-- <li> <h1 style="size: 2.0em; color: rgb(9, 92, 120)">D<span style="color:#39d1b4">{</span></h1> </li> -->
-<li><a id="home" href="/index.html">Home</a></li>
-<li><a id="about" href="/me.html">About Me</a></li>
-<!--<li><a href="/fun.html">Fun Stuff</a></li> -->
-<!--<li><a href="/pokedex.html">Pokedex</a></li>
-<li><a href="http://www.jacopocolo.com/hottercolder/">Weather</a></li>-->
-<li><a id="github" href="https://github.com/davidawad" target="_blank">My <span style="color:rgb(9, 92, 120)">Github</span></a></li>
-</ul>
-<!-- <div style="border-top: 2px solid #3e3e3e; margin:1% ; width: 100%;"></div> -->
-</div>
+	<header class="cd-header">
+		<nav>
+			<ul class="cd-secondary-nav">
+				<li><a href="DavidAwad.pdf" target="_blank">Resume</a></li>
+				<li><a href="https://github.com/DavidAwad" target="_blank">Github</a></li>
+			</ul>
+		</nav> <!-- cd-nav -->
 
-<!-- <h1 style="size: 2.0em; color: rgb(9, 92, 120)">D<span style="color:#39d1b4">{</span></h1> -->
+		<a class="cd-primary-nav-trigger" href="#0">
+			<span class="cd-menu-text"></span><span class="cd-menu-icon"></span>
+		</a> <!-- cd-primary-nav-trigger -->
+	</header>
+	<nav>
+		<ul class="cd-primary-nav">
 
-<div id="wrapper">
-<p id="1"> Hey <span id="guestname" style="font-family:billabongregular" title="That's you!"></span>, It's a pleasure to meet you<span style="font-family:billabongregular">!</span></p>
+			<li class="cdd-label">About Me</li>
+			<!--<li><a href="#0">The Team</a></li> -->
+			<li><a href="https://github.com/DavidAwad?tab=repositories" target="_blank">My Projects</a></li>
 
-<p id="2">I'm <span id="age"></span> years old. I'm a <span id="prog">Programmer</span>, <span id="phys">Physicist</span>, <span id="phil">Philosopher</span>, and <span id="muse">Musician</span>. I've also studied <span id="judo">Judo</span>.<!-- Need a cool <a style="text-decoration:none; color:green"class="link_about" href="http://www.jacopocolo.com/hottercolder/">weather</a> app?</p>  Big thanks to Jacopo Colo for help with the website as I've learned so much just from doing this with all of his amazing visuals -->
+			<li class="cdd-label">Work with Me!</li>
 
-<div id ="3">I started <a id="link_saatchi" class="accordion mouse" href="#" onclick="return false;" title="The Best Company Ever">
-David's Device Repair</a>;
-<div class="hide">
-<div class="date">(June 2014 - )</div>
-I started my own business fixing devices for people after wanting to get a little bit more experience with fixing software and hardware and It's been one of the best decisions I've ever made. I've learned so much about computing just spending my summer coding and fixing hardware too. Visit us <a target="_blank" style="TEXT-DECORATION: NONE"  href="https://devicerepair.github.io" title="Not working just yet!" >here</a>! </div>
-I've worked for
-<a title="Best college glee club ever! " id="link_pcmagazine" class="accordion mouse" href="#">The Rutgers University Glee Club</a>,
-  <div class="hide">
-    <div class="date">(jan 2010 - )</div>
-      I'm the current website maintainer and Head Technological Coordinator for the Rutgers <a style="color:scarlet" target="_blank"  href="http://gleeclub.rutgers.edu/~rugc/home/">Glee Club</a>. It's my job make sure that all of the technological aspects of the glee club are in order such as the alumni database.</div>
+			<li><a href="mailto:davidwad64@gmail.com">Email Me</a></li>
+			<li><a href="mailto:davidwad64@gmail.com">Davidawad64@<span style="color:red">gmail</span>.com</a></li>
 
-<a id="link_macchianera" class="accordion mouse" href="javaScript:void(0);">PC Warehouse</a>,
-  <div class="hide">
-    <div class="date">(oct 2012 - mar 2013)</div>
-      I was a device technician at a PC warehouse where I was responsible for fixing any computers that came into the store while also providing occasional sales support to customers.
-  </div> and
+			<li class="cdd-label">Connect With Me</li>
+			
+			<li class="cd-social cd-facebook"><a href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a></li>
+			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+			<li class="cd-social cd-twitter"><a href="https://twitter.com/Drepsi" target="_blank">Twitter</a></li>
+		</ul>
+	</nav>
 
-<a id="link_Edison" class="accordion mouse" href="#">Edison Township</a>.
-  <div class="hide">
-    <div class="date">(jul 2012 - aug 2012)</div>
-      I was an intern for the Mayor of my township for one summer. I attended lots of political events and got to meet state senators and Governor Chris Christie!
-  </div>
-I'm hoping to find a Job in either
+	<section class="cd-intro">
+		<h1>David Awad</h1>
+		<!-- <a href="#" class="medium success button">contact me</a> -->
+		<h2>"I promise I'll change the world, just give me a chance"</h2>
+	</section>
 
-<a title="Wow! much CSS! So Website!" id="link_personalreport" class="accordion mouse" href="#"><span id="web">Web Development</span></a>,
-  <div class="hide">
-    I would love to do this kind of thing for a living. It's almost like an art form. It's like chipping away at marble until the product looks exactly how you imagined it in your mind. I can really take pride in a product when it comes out exactly the way I want it to. Software is just an amazing field and the internet is by far my favorite part of it.
-      </div>
 
-<a id="link_annamaria" class="accordion mouse" href="#">Engineering</a>, or even as a
-  <div class="hide">
-    My dream job would probably be as an acceleration engineer at the Large Hadron Collider in Switzerland. More realistically any engineering firms or really anywhere that I could study and apply the latest physics to make useful and exciting things.
-    </div>
 
-<a id="link_ogilvy" class="accordion mouse" href="#" onclick="return false;">Philosopher</a>.
-  <div class="hide">
-    It could happen.
-  </div>
-Here are some of my favorite
-<a id="link_linkiesta" class="accordion mouse" href="#" onclick="return false;">Languages</a>.
-  <div class="hide">
-  	Java, HTML, CSS, JavaScript, jQuery, <span id="pyt" title="As you can see">Pyt</span><span id="hon" title="I really like Python">hon</span>, and C.
-  </div>
-I built this site over the summer in my spare time. There are lots of fun secrets hidden throughout. I hope you enjoy looking through it as much as I did making it.
-<br>
-Sincerely, <span id="david">David </span><span id="awad">Awad</span>
 
-<div style="border-top: 1px solid #3e3e3e; margin: 3% auto;  width: 100%;"></div>
+	<main class="cd-main-content">
+		<div class="cd-container">
 
- <p id="parcontatti">Looking for a new intern? <a class="contatti" href="mailto:davidawad64@gmail.com">Email me!</a> I'm also on <a class="contatti" href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a>, and <a class="contatti" href="http://www.linkedin.com/in/davidawad64" target="_blank">LinkedIn</a>. Here is my <a class="contatti" href="/res/David Awad.pdf" target="_blank">resume</a>. Feel free to <a class="contatti" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6K7XB3RU72JDJ&lc=US&item_name=David%20Awad%21&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" target="_blank">Donate!</a> </p>
+			<p stye="font-size:2em">
+				My name is David Awad, 
+			</p>
+				<br>
+			<p>
+				I'm an aspiring philosopher, web developer, designer, programmer, computer scientist, judo black belt, physicist, mathematician, and human being. 
+			</p>
 
-<p id="parcontatti">Huge thanks to <a class="contatti" href="http://www.jacopocolo.com/" target="_blank">Jacopo Col&ograve;</a> for all his help and providing me with a base and inspiration.</p>
-<h1 style="text-align:center;size: 2.0em; color: rgb(9, 92, 120)">D<span style="color:#39d1b4">{</span></h1>
-<div id="simboli"> <a href="#" id="smiley">:)</a>
-<a href="#" id="heart">Hand coded with <span id="khart">&#10084;</span></a>
-<br>
-<br>
-<br>
-<span id="judogi">
-<a href="http://en.wikipedia.org/wiki/Judo" target="_blank" title="JUDO"> <p style="color:#888">柔</p> </a>
-<a href="http://en.wikipedia.org/wiki/JUDO_(computer_programming_environment)" target="_blank" title="different judo..."> <p style="color:#888">道</p> </a> </span>
-</div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dolore, impedit eveniet necessitatibus voluptate distinctio quam repellendus voluptates voluptatum inventore rem sapiente minus esse saepe iste harum architecto numquam quis vero dignissimos beatae est id libero adipisci enim odio natus commodi explicabo modi similique nesciunt deserunt vel consectetur velit omnis quaerat corrupti. Cumque, perspiciatis, culpa, reprehenderit laboriosam obcaecati deleniti soluta tempora ipsum ipsam iure temporibus dolore modi quidem cum doloribus ex vel suscipit sapiente ut esse optio voluptates molestias natus nostrum illo nihil quisquam facilis hic atque voluptas quae pariatur placeat officia doloremque quia ea recusandae rem iste asperiores iusto debitis quod incidunt id nemo repellendus itaque. Iure, vel, expedita quam repellendus aliquam fugit autem obcaecati libero reiciendis excepturi officia voluptate molestiae quis itaque consequatur nulla ea sunt facilis cupiditate tempora sequi nam in asperiores! Sunt, maxime at id eaque debitis quasi a possimus eveniet eum velit tempore quidem voluptates expedita quibusdam officiis. Ipsum, quaerat, vero, adipisci enim autem inventore eum maiores consectetur culpa molestiae cumque sed qui dolorem. Placeat, quae deleniti molestiae minima cupiditate quaerat sit est perspiciatis error iste. Ratione, minus, commodi, magni laborum doloribus libero ullam quos tenetur quis molestias ipsam consequuntur harum asperiores culpa nostrum omnis.
+			</p>
 
-<script>
-$("a#smiley").click(function () {
-$("a#heart").toggle();
-$("a#smiley").hide();
-return true;
-});
-</script>
-</div>
-</div>
-<script type="text/javascript" src="/script/jquery.fittext.js">
-</script>
-<script type="text/javascript">
-    $("div#wrapper").fitText(1.2,{minFontSize: 14, maxFontSize: '41px' });
-</script>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quos, voluptate, sunt, in suscipit quibusdam quis dignissimos eligendi repellendus ipsam exercitationem adipisci nostrum fugit accusamus quae cum nisi accusantium eaque.
+			</p>
 
-<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-11/cur1058.ani), url(http://cur.cursors-4u.net/cursors/cur-11/cur1058.png), progress !important;}</style><a href="http://www.cursors-4u.com/cursor/2012/03/03/blue-fire-pointer.html" target="_blank" title="Blue Fire Pointer"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Blue Fire Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dolore, impedit eveniet necessitatibus voluptate distinctio quam repellendus voluptates voluptatum inventore rem sapiente minus esse saepe iste harum architecto numquam quis vero dignissimos beatae est id libero adipisci enim odio natus commodi explicabo modi similique nesciunt deserunt vel consectetur velit omnis quaerat corrupti. Cumque, perspiciatis, culpa, reprehenderit laboriosam obcaecati deleniti soluta tempora ipsum ipsam iure temporibus dolore modi quidem cum doloribus ex vel suscipit sapiente ut esse optio voluptates molestias natus nostrum illo nihil quisquam facilis hic atque voluptas quae pariatur placeat officia doloremque quia ea recusandae rem iste asperiores iusto debitis quod incidunt id nemo repellendus itaque. Iure, vel, expedita quam repellendus aliquam fugit autem obcaecati libero reiciendis excepturi officia voluptate molestiae quis itaque consequatur nulla ea sunt facilis cupiditate tempora sequi nam in asperiores! Sunt, maxime at id eaque debitis quasi a possimus eveniet eum velit tempore quidem voluptates expedita quibusdam officiis. Ipsum, quaerat, vero, adipisci enim autem inventore eum maiores consectetur culpa molestiae cumque sed qui dolorem. Placeat, quae deleniti molestiae minima cupiditate quaerat sit est perspiciatis error iste. Ratione, minus, commodi, magni laborum doloribus libero ullam quos tenetur quis molestias ipsam consequuntur harum asperiores culpa nostrum omnis.
+			</p>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dolore, impedit eveniet necessitatibus voluptate distinctio quam repellendus voluptates voluptatum inventore rem sapiente minus esse saepe iste harum architecto numquam quis vero dignissimos beatae est id libero adipisci enim odio natus commodi explicabo modi similique nesciunt deserunt vel consectetur velit omnis quaerat corrupti. Cumque, perspiciatis, culpa, reprehenderit laboriosam obcaecati deleniti soluta tempora ipsum ipsam iure temporibus dolore modi quidem cum doloribus ex vel suscipit sapiente ut esse optio voluptates molestias natus nostrum illo nihil quisquam facilis hic atque voluptas quae pariatur placeat officia doloremque quia ea recusandae rem iste asperiores iusto debitis quod incidunt id nemo repellendus itaque. Iure, vel, expedita quam repellendus aliquam fugit autem obcaecati libero reiciendis excepturi officia voluptate molestiae quis itaque consequatur nulla ea sunt facilis cupiditate tempora sequi nam in asperiores! Sunt, maxime at id eaque debitis quasi a possimus eveniet eum velit tempore quidem voluptates expedita quibusdam officiis. Ipsum, quaerat, vero, adipisci enim autem inventore eum maiores consectetur culpa molestiae cumque sed qui dolorem. Placeat, quae deleniti molestiae minima cupiditate quaerat sit est perspiciatis error iste. Ratione, minus, commodi, magni laborum doloribus libero ullam quos tenetur quis molestias ipsam consequuntur harum asperiores culpa nostrum omnis.
+			</p>
+
+
+
+
+	<!--<ul class="cd-filter"> ForDebugging
+		<li>
+			<input type="radio" id="cd-success" name="cd-message" checked>
+			<label for="cd-success">Success</label>
+		</li>
+
+		<li>
+			<input type="radio" id="cd-error" name="cd-message">
+			<label for="cd-error">Error</label>
+		</li>
+
+		<li>
+			<input type="radio" id="cd-notification" name="cd-message">
+			<label for="cd-notification">Notification</label>
+		</li>
+	</ul> -->
+
+<hr>
+
+	<div class="cd-form-wrapper cd-container">
+		<form class="cd-form">
+			<label class="cd-label" for="cd-email">Email?</label>
+			<input type="email" id="cd-email" class="cd-email" name="cd-email" placeholder="Enter your email address">
+			<input type="submit" class="cd-submit" value="Submit">
+			<div class="cd-loading"></div>
+		</form>
+
+		<div data-type="message" class="cd-response cd-response-error">Ops! Error message here</div>
+		<div data-type="message" class="cd-response-success"><p>Great! Success message here</p></div>
+		<div data-type="message" class="cd-response cd-response-notification">I'll Drop you line :)</div>
+	</div>
+
+
+
+
+		</div>
+	</main>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
-
 </html>
