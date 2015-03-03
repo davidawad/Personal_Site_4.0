@@ -45,8 +45,8 @@
 			<li class="cdd-label">Connect With Me</li>
 			
 			<li class="cd-social cd-facebook"><a href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a></li>
-			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
-			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+			<!-- <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li> -->
 			<li class="cd-social cd-twitter"><a href="https://twitter.com/Drepsi" target="_blank">Twitter</a></li>
 		</ul>
 	</nav>
@@ -54,11 +54,8 @@
 	<section class="cd-intro">
 		<h1>David Awad</h1>
 		<!-- <a href="#" class="medium success button">contact me</a> -->
-		<h2>“A ship in the harbor is safe, but that's not what ships are for"</h2>
+		<h2>“A ship in the harbor is safe, but that's not <span id="typed" data-typer-targets="out on the sea. , where they belong., why men sail.">what ships are for</span>"</h2>
 	</section>
-
-
-
 
 	<main class="cd-main-content">
 		<div class="cd-container">
@@ -145,7 +142,21 @@
 
 		</div>
 	</main>
-<script src="js/jquery-2.1.1.js"></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+<script src="js/jquery.typer.js"></script>
+<!-- <script src="js/jquery-2.1.1.js"></script> -->
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+<script type="text/javascript">
+          $(function () {
+          $('[data-typer-targets]').typer();
+          });
+          $(document).ready(function(){
+          });
+</script>
+
+
 </body>
 </html>
