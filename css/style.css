@@ -9,7 +9,7 @@ Primary style
   box-sizing: border-box;
 }
 
-p::selection {
+*::selection {
   background: #323232;
   color: white;
 }
