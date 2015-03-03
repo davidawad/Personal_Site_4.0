@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
 	<meta charset="UTF-8">
@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
+
 
 <title>David Awad | Person</title>
 </head>
@@ -43,7 +43,7 @@
 			<li><a href="mailto:davidwad64@gmail.com">Davidawad64@<span style="color:red">gmail</span>.com</a></li>
 
 			<li class="cdd-label">Connect With Me</li>
-			
+
 			<li class="cd-social cd-facebook"><a href="https://www.facebook.com/david.a.awad" target="_blank">Facebook</a></li>
 			<!-- <li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
 			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li> -->
@@ -60,46 +60,46 @@
 	<main class="cd-main-content">
 		<div class="cd-container">
 
-			<p style="font-size:1.5em">
-				My name is David Awad, 
+			<p id="naminggg" style="font-size:1.5em">
+				My name is David Awad,
 			</p>
 				<br>
 			<p>
-				I'm an aspiring philosopher, web developer, designer, programmer, physicist, mathematician, engineer, poet and person. 
+				I'm an aspiring philosopher, web developer, designer, programmer, physicist, mathematician, engineer, poet and person.
 			<br>
-                          
-				I spend all of my free time building things, and trying to improve myself for the people around me.  
+
+				I spend all of my free time building things, and trying to improve myself for the people around me.
 			<br>
 			<br>
-				
+
 				If you had asked me where I thought I would be five years ago I can guarantee you I wouldn't have said a software developer at an amazing company. I am so thankful for all the opportunities I've been given this past year.
-				
+
 				<br>
 				<br>
-				
-				My dreams have certainly varied as of late, hoping that I can accomplish so many things with my programming career. Not necessarily because my career is the most important thing to me, 
+
+				My dreams have certainly varied as of late, hoping that I can accomplish so many things with my programming career. Not necessarily because my career is the most important thing to me,
 				but because I'm really passionate about creating amazing things with software.
-				
+
 				<br>
 				<br>
-				
+
 				I feel like I have so much more to still do with my life that other people have, even some of my friends in my year have had interviews for my dream job at google.
-				
+
 				<br>
 				<br>
-				
+
 				All I know is that I want to do and create a lot more before I graduate college and not be a GPA slapped into a database.
-				
+
 				<br>
 				<br>
-				
+
 				"I can never read all the books I want; I can never be all the people I want and live all the lives I want. I can never train myself in all the skills I want. And what do I want? I want to live and feel all the shades, tones, and variations of mental and physical experience possible in my life. And I am horribly limited."   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Sylvia Plath
 				<br>
 				<br>
 				<br>
 				<br>
 				<br>
-				If you're thinking to contact me <a href="mailto:davidwad64@gmail.com" style="color:rgb(9, 92, 120);">please feel free</a>, It is a personal goal of mine to be someone who provides happiness, and support to as many people as I can in my small lifetime. 
+				If you're thinking to contact me <a href="mailto:davidwad64@gmail.com" style="color:rgb(9, 92, 120);">please feel free</a>, It is a personal goal of mine to be someone who provides happiness, and support to as many people as I can in my small lifetime.
 
 			</p>
 
@@ -119,9 +119,7 @@
 			<label for="cd-notification">Notification</label>
 		</li>
 	</ul> -->
-
 <hr>
-
 	<div class="cd-form-wrapper cd-container">
 		<form class="cd-form" action="submit">
 			<label class="cd-label" for="cd-email">Email?</label>
@@ -137,17 +135,21 @@
 		</div>
 	</main>
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
 <script src="js/jquery.typer.js"></script>
+<script src="js/jquery.appear.js"></script>
 <script src="js/main.js"></script>
-
 <script type="text/javascript">
           $(function () {
           $('[data-typer-targets]').typer();
-          }); 
-    
+          });
+					$("#naminggg").appear();
+					$('#naminggg').on('appear', function(event, $all_appeared_elements) {
+			      // this element is now inside browser viewport
+						console.log("visible");
+			    });
           $(document).ready(function(){
           });
 </script>

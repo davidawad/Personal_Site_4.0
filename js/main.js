@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
 		$(window).on('scroll',
 		{
 	        previousTop: 0
-	    }, 
+	    },
 	    function () {
 		    var currentTop = $(window).scrollTop();
 		    //check if user is scrolling up
@@ -30,9 +30,9 @@ jQuery(document).ready(function($){
 
 	//open/close primary navigation
 	$('.cd-primary-nav-trigger').on('click', function(){
-		$('.cd-menu-icon').toggleClass('is-clicked'); 
+		$('.cd-menu-icon').toggleClass('is-clicked');
 		$('.cd-header').toggleClass('menu-is-open');
-		
+
 		//in firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
 		if( $('.cd-primary-nav').hasClass('is-visible') ) {
 			$('.cd-primary-nav').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
@@ -41,7 +41,7 @@ jQuery(document).ready(function($){
 		} else {
 			$('.cd-primary-nav').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
 				$('body').addClass('overflow-hidden');
-			});	
+			});
 		}
 	});
 
@@ -56,11 +56,11 @@ jQuery(document).ready(function($){
 
 	var messages = $('div[data-type="message"]');
 	//check if user updates the email field
-	$('.cd-form .cd-email').keyup(function(event){	
+	$('.cd-form .cd-email').keyup(function(event){
 		//check if user has pressed the enter button (event.which == 13)
 		if(event.which!= 13) {
 			//if not..
-			//hide messages and loading bar 
+			//hide messages and loading bar
 			messages.removeClass('slide-in is-visible');
 			$('.cd-form').removeClass('is-submitted').find('.cd-loading').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
 		}
@@ -82,11 +82,11 @@ jQuery(document).ready(function($){
 	});
 
 	//backspace doesn't fire the keyup event in android mobile
-	//so we check if the email input is focused to hide messages and loading bar 
+	//so we check if the email input is focused to hide messages and loading bar
 	$('.cd-form .cd-email').on('focus', function(){
 		messages.removeClass('slide-in is-visible');
 		$('.cd-form').removeClass('is-submitted').find('.cd-loading').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
-	});	
+	});
 
 	//you should replace this part with your ajax function
 	$('.cd-submit').on('click', function(event){
@@ -112,11 +112,11 @@ jQuery(document).ready(function($){
 		} else {
 			$('.cd-response-notification').addClass('is-visible');
 		}
-        
+
         // on submit take in val of email field and send email.
         var userEmail = $('#formEmail').val();
         console.log("sending email to " + userEmail );
-        
+
         $.ajax({
   'type': "POST",
   'url': "https://mandrillapp.com/api/1.0/messages/send.json",
@@ -130,33 +130,41 @@ jQuery(document).ready(function($){
             'name': "RECIPIENT NAME",
             'type': "to"
           },
+					{
+						'email': "THEIR EMAIL", //this is still in development
+						'name': "",
+						'type': "to"
+					},
         ],
       'autotext': "true",
       'subject': "SUBJECT!",
-      'html': "Thanks for visiting my website!"
+      'html': "you got a site visit from " + userEmail + "who's visited!s"
     }
   }
  }).done(function(response) {
    console.log(response); // if you're into that sorta thing
  });
-    
+
     var ref = new Firebase("https://blinding-fire-9145.firebaseio.com/emails");
         var usersRef = ref.child("users");
+				var currentdate = new Date();
+				var datetime = "Last Sync: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/"
+                + currentdate.getFullYear() + " @ "
+                + currentdate.getHours() + ":"
+                + currentdate.getMinutes() + ":"
+                + currentdate.getSeconds();
 
-        usersRef.set({
-  alanisawesome: {
-    date_of_birth: "June 23, 1912",
-    full_name: "Alan Turing"
-  },
-  gracehop: {
-    date_of_birth: "December 9, 1906",
-    full_name: "Grace Hopper"
+  usersRef.set({
+  person: {
+    email: userEmail,
+    time: datetime
   }
 });
 
-}////////END OF SHOW NOTIF.  
+}////////END OF SHOW NOTIF.
 	//placeholder fallback (i.e. IE9)
-    
+
 	if(!Modernizr.input.placeholder){
 		$('[placeholder]').focus(function() {
 			var input = $(this);
