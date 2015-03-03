@@ -54,13 +54,13 @@
 	<section class="cd-intro">
 		<h1>David Awad</h1>
 		<!-- <a href="#" class="medium success button">contact me</a> -->
-		<h2>“A ship in the harbor is safe, but that's not <span id="typed" data-typer-targets="out on the sea. , where they belong., why men sail.">what ships are for</span>"</h2>
+		<h2>“A ship in the harbor is safe, but that's not <span id="typed" data-typer-targets="out on the sea., where they belong.,why men sail.,what ships are for."></span>"</h2>
 	</section>
 
 	<main class="cd-main-content">
 		<div class="cd-container">
 
-			<p stye="font-size:2em">
+			<p style="font-size:1.5em">
 				My name is David Awad, 
 			</p>
 				<br>
@@ -125,8 +125,8 @@
 	<div class="cd-form-wrapper cd-container">
 		<form class="cd-form" action="submit">
 			<label class="cd-label" for="cd-email">Email?</label>
-			<input type="email" id="cd-email" class="cd-email" name="cd-email" placeholder="Enter your email address">
-			<input type="submit" class="cd-submit" value="Submit">
+			<input id="formEmail" type="email" id="cd-email" class="cd-email" name="cd-email" placeholder="Enter your email address">
+			<input id="storeEmail" type="submit" class="cd-submit" value="Submit">
 			<div class="cd-loading"></div>
 		</form>
 		<div data-type="message" class="cd-response cd-response-error">Ops! Error message here</div>
@@ -134,22 +134,20 @@
 		<div data-type="message" class="cd-response cd-response-notification">I'll drop you a line :)</div>
 	</div>
 
-
-
-
 		</div>
 	</main>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
 <script src="js/jquery.typer.js"></script>
-<!-- <script src="js/jquery-2.1.1.js"></script> -->
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/main.js"></script>
 
 <script type="text/javascript">
           $(function () {
           $('[data-typer-targets]').typer();
-          });
+          }); 
+    
           $(document).ready(function(){
           });
 </script>

@@ -112,10 +112,51 @@ jQuery(document).ready(function($){
 		} else {
 			$('.cd-response-notification').addClass('is-visible');
 		}
-	}
+        
+        // on submit take in val of email field and send email.
+        var userEmail = $('#formEmail').val();
+        console.log("sending email to " + userEmail );
+        
+        $.ajax({
+  'type': "POST",
+  'url': "https://mandrillapp.com/api/1.0/messages/send.json",
+  'data': {
+    'key': "5xnjyeS5tH1qCoxtOaukqA",
+    'message': {
+      'from_email': "davidawad64@gmail.com",
+      'to': [
+          {
+            'email': "davidawad64@gmail.com",
+            'name': "RECIPIENT NAME",
+            'type': "to"
+          },
+        ],
+      'autotext': "true",
+      'subject': "SUBJECT!",
+      'html': "Thanks for visiting my website!"
+    }
+  }
+ }).done(function(response) {
+   console.log(response); // if you're into that sorta thing
+ });
+    
+    var ref = new Firebase("https://blinding-fire-9145.firebaseio.com/emails");
+        var usersRef = ref.child("users");
 
+        usersRef.set({
+  alanisawesome: {
+    date_of_birth: "June 23, 1912",
+    full_name: "Alan Turing"
+  },
+  gracehop: {
+    date_of_birth: "December 9, 1906",
+    full_name: "Grace Hopper"
+  }
+});
+
+}////////END OF SHOW NOTIF.  
 	//placeholder fallback (i.e. IE9)
-	//credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
+    
 	if(!Modernizr.input.placeholder){
 		$('[placeholder]').focus(function() {
 			var input = $(this);
@@ -137,31 +178,5 @@ jQuery(document).ready(function($){
 		  	})
 		});
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//////////closing bs
-
 
 });
