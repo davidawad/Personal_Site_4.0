@@ -14,7 +14,7 @@ String.prototype.rightChars = function(n){
   var
     options = {
       highlightSpeed    : 40,
-      typeSpeed         : 100,
+      typeSpeed         : 150,
       clearDelay        : 500,
       typeDelay         : 200,
       clearOnHighlight  : true,

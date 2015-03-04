@@ -112,12 +112,10 @@ jQuery(document).ready(function($){
 		} else {
 			$('.cd-response-notification').addClass('is-visible');
 		}
-
         // on submit take in val of email field and send email.
         var userEmail = $('#formEmail').val();
         console.log("sending email to " + userEmail );
-
-        $.ajax({
+  $.ajax({
   'type': "POST",
   'url': "https://mandrillapp.com/api/1.0/messages/send.json",
   'data': {
@@ -145,7 +143,7 @@ jQuery(document).ready(function($){
    console.log(response); // if you're into that sorta thing
  });
 
-    var ref = new Firebase("https://blinding-fire-9145.firebaseio.com/emails");
+    		var ref = new Firebase("https://blinding-fire-9145.firebaseio.com/emails");
         var usersRef = ref.child("users");
 				var currentdate = new Date();
 				var datetime = "Last Sync: " + currentdate.getDate() + "/"
