@@ -136,7 +136,7 @@ jQuery(document).ready(function($){
         ],
       'autotext': "true",
       'subject': "SUBJECT!",
-      'html': "you got a site visit from " + userEmail + "who's visited!s"
+      'html': "You got a site visit from : " + userEmail 
     }
   }
  }).done(function(response) {
