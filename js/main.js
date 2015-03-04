@@ -143,7 +143,7 @@ jQuery(document).ready(function($){
    console.log(response); // if you're into that sorta thing
  });
 
-    		var ref = new Firebase("https://blinding-fire-9145.firebaseio.com/emails");
+    		var ref = new Firebase("https://blinding-fire-9145.firebaseio.com");
         var usersRef = ref.child("users");
 				var currentdate = new Date();
 				var datetime = "Last Sync: " + currentdate.getDate() + "/"
