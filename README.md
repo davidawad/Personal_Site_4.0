@@ -7,11 +7,9 @@ This is my personal website. Enjoy it because I love this one. Lot's of changes 
 
 ##Thanks for Looking!
 
-### Huge Thanks to [Jacopo colo](https://github.com/jacopocolo) for the codebase of my originaly gitub pages site.
+### Huge Thanks to [Jacopo colo](https://github.com/jacopocolo) for the original codebase of my old gitub pages site, it was a huge inspiration for me.
 
-## [Kyle Johnson](http://www.kylejson.com/) also deserves some thanks
-
-##Lastly and most importantly would have to be [CodyHouse](http://codyhouse.co/) since they really are the guys to thank here. 
+##Lastly and most importantly would have to be [CodyHouse](http://codyhouse.co/) since they provide fantastic code snippets. 
 
 
 
