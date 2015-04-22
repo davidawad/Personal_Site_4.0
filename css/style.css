@@ -1,4 +1,18 @@
-/* -------------------------------- 
+/* -------------------
+
+Flexible Styles
+
+---------------------*/
+
+.corporate{
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+
+/* --------------------------------
 
 Primary style
 
@@ -30,7 +44,7 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -47,9 +61,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 html, body {
@@ -472,7 +486,7 @@ html, body {
 
 
 
-/* /////////////////////////////////////////////////////////////////////////////////               BELOW IS FOR THE FORM                    */
+/*     BELOW IS FOR THE FORM                    */
 
 
 
@@ -507,9 +521,9 @@ input[type=submit] {
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 header {
@@ -850,7 +864,7 @@ header h1 {
 }
 .cd-response-success p {
 
-  position: absolute; 
+  position: absolute;
   text-align: center;
   width: 100%;
   left: 50%;
@@ -885,28 +899,3 @@ header h1 {
   -moz-transition: opacity 0.3s 0.3s;
   transition: opacity 0.3s 0.3s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

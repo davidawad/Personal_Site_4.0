@@ -72,16 +72,26 @@
 
 <p id="myName" class="typein" style="font-size:1.5em"></p>
 <br>
-<p id="goals"></p>
-<p id="building"></p>
-<p id="future"></p>
-<p id="dreams"></p>
-<p id="life"></p>
-<p id="know"></p>
-<p id="quote"></p>
-<p id="contact"></p>
+<p id="goals">I'm an aspiring philosopher, web developer, designer, programmer, physicist, mathematician, engineer, poet and person.</p>
 
-   <!--<ul class="cd-filter"> ForDebugging
+<p>Call me an Engineer, call me a scientist, call me a dork, call me crazy, I'm an Inventor</p>
+
+<p>I have built some of the coolest ideas, from machine learning on large twitter datasets, to a social network for brain waves, I've been to a hackathon every single weekend, and I don't plan on stopping anytime soon.</p>
+
+<p>If I have anything, I have one thing in very high supply, crazy passion. I will get addicted to my projects.</p>
+
+<p> I will move <span style="color: red">fast</span>. I will <span style="color: red">break</span> things. I will create, build, tweak and destroy.</p>
+
+<p>I suppose it's simply <span style="color: rgb(9, 92, 120); text-rendering: optimizeLegibility; font-size:1.5em; font-family:Georgia">Who I Am</span>.</p>
+
+<p id="know">All I know is that I want to do and create a lot more before I go. I want to change the world.</p>
+
+<p id="quote">"I can never read all the books I want; I can never be all the people I want and live all the lives I want. I can never train myself in all the skills I want. And what do I want? I want to live and feel all the shades, tones, and variations of mental and physical experience possible in my life. And I am horribly limited."         - Sylvia Plath</p>
+
+<p id="contact">If you're thinking to contact me please feel free, It is a personal goal of mine to be someone who provides happiness, and support to as many people as I can in my small lifetime.</p>
+
+<!--
+   <ul class="cd-filter"> ForDebugging
    <li>
    <input type="radio" id="cd-success" name="cd-message" checked>
    <label for="cd-success">Success</label>
@@ -96,7 +106,9 @@
    <input type="radio" id="cd-notification" name="cd-message">
    <label for="cd-notification">Notification</label>
    </li>
-   </ul> -->
+   </ul>
+-->
+
    <hr>
    <div class="cd-form-wrapper cd-container">
    <form class="cd-form" action="submit">
@@ -109,10 +121,29 @@
    <div data-type="message" class="cd-response-success"><p>Great! Success message here</p></div>
    <div data-type="message" class="cd-response cd-response-notification">I'll drop you a line :)</div>
    </div>
-   </div>
 
+   <h1 style="text-align:center; font-size:1.5em">Technologies I Can Build With</h1>
+   <hr>
 
-   </main>
+   <a href="https://github.com/DavidAwad/IronMyo">         <img src="img/corporates/myo.jpg" class="corporate"/> </a>
+   <a href="https://github.com/DavidAwad/KinectSentryGun"> <img src="img/corporates/kinect.png" class="corporate"/> </a>
+   <a href="https://github.com/DavidAwad/IronMyo"> <img src="img/corporates/oculus.png" class="corporate"/> </a>
+   <!-- <a href="">                                     <img src="img/corporates/glass.png" class="corporate"/> </a> -->
+   <a href="https://github.com/DavidAwad/Waves">   <img src="img/corporates/muse.png" class="corporate"/> </a>
+   <a href="https://github.com/DavidAwad/KinectSentryGun"> <img src="img/corporates/nerf.png" class="corporate"/> </a>
+
+   <br>
+   <br>
+   <h1 style="text-align:center; font-size:1.5em">I Speak Many Languages</h1>
+   <hr>
+
+   <img src="img/languages/node.svg" class="corporate"/>
+   <img src="img/languages/C.png" class="corporate"/>
+   <img src="img/languages/python.png" class="corporate"/>
+   <img src="img/languages/java.png" class="corporate"/>
+
+</div>
+</main>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
@@ -121,13 +152,21 @@
    <script src="js/jquery.typer.js"></script>
    <script src="js/jquery.appear.js"></script>
    <script src="js/main.js"></script>
-   <script type="text/javascript">
+
+    <script type="text/javascript">
     $(function () {
+
+      setTimeout(setTyping, 1000);
+
+      function setTyping() {
 		   $('[data-typer-targets]').typer();
-		});
+      }
+
     $("p").appear();
     $('p').on('appear', function(event, $all_appeared_elements) {
-		$('#myName').typeTo("My name is David Awad,");
+		    $('#myName').typeTo("My name is David Awad,");
+    });
+    /*
     $('#goals').typeTo("I'm an aspiring philosopher, web developer, designer, programmer, physicist, mathematician, engineer, poet and person.");
     $('#building').typeTo("I spend all of my free time building things, and trying to improve myself for the people around me.");
     $('#future').typeTo("If you had asked me where I thought I would be five years ago I can guarantee you I wouldn't have said a software developer at an amazing company. I am so thankful for all the opportunities I've been given this past year.");
@@ -136,14 +175,9 @@
     $('#know').typeTo("All I know is that I want to do and create a lot more before I graduate college and not be a GPA slapped into a database.");
     $('#quote').typeTo('"I can never read all the books I want; I can never be all the people I want and live all the lives I want. I can never train myself in all the skills I want. And what do I want? I want to live and feel all the shades, tones, and variations of mental and physical experience possible in my life. And I am horribly limited."         - Sylvia Plath');
     $('#contact').typeTo("If you're thinking to contact me please feel free, It is a personal goal of mine to be someone who provides happiness, and support to as many people as I can in my small lifetime.");
-});
-$(document).ready(function(){
-		});
-</script>
-
-
-
-
+    */
+    });
+    </script>
 
 </body>
 </html>
