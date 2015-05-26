@@ -135,7 +135,7 @@ jQuery(document).ready(function($){
 					},
         ],
       'autotext': "true",
-      'subject': "SUBJECT!",
+      'subject': "New Site Visit!",
       'html': "You got a site visit from : " + userEmail 
     }
   }
