@@ -121,22 +121,22 @@ jQuery(document).ready(function($){
   'data': {
     'key': "5xnjyeS5tH1qCoxtOaukqA",
     'message': {
-      'from_email': "davidawad64@gmail.com",
+      'from_email': "contact@davidawad.com",
       'to': [
-          {
-            'email': "davidawad64@gmail.com",
-            'name': "RECIPIENT NAME",
-            'type': "to"
-          },
-					{
-						'email': "THEIR EMAIL", //this is still in development
-						'name': "",
-						'type': "to"
-					},
-        ],
+	      	{
+	        	'email': "davidawad64@gmail.com",
+	        	'name': "RECIPIENT NAME",
+	        	'type': "bcc"
+	        },
+		{
+			'email': userEmail, 
+			'name': "",
+			'type': "to"
+		},
+	],
       'autotext': "true",
-      'subject': "New Site Visit!",
-      'html': "You got a site visit from : " + userEmail 
+      'subject': "Hello!",
+      'html': "Hello! Thanks for reaching out to me! I hope this letter finds you well, I'm writing you as you filled out the form on my website, please feel free to reach out with anything you need. I'll do everything I can to help. Truth of the matter is that this is an automated email, but once the real David Awad sees it, he'll get back to you. Have a great day!" 
     }
   }
  }).done(function(response) {
