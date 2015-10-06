@@ -1,57 +1,110 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <title>David Awad | Person </title>
 
-	<link rel="stylesheet" href="404/css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="404/css/style.css"> <!-- Resource style -->
-	<link rel="stylesheet" href="404/css/styles.css">
-	<script src="404/js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>Rounded Animated Navigation | CodyHouse</title>
-</head>
-<body>
-	<header>
-		<a class="cd-logo" href="http://davidawad.github.io" style="font-size:4em;font-family:cookie;color:color:rgb(9, 92, 120);">David Awad</a>
-	</header>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-	<nav>
-		<ul class="cd-primary-nav">
-			<li><a href="http://davidawad.github.io">Home Page</a></li>
-			<li><a href="DavidAwad.pdf" target="_blank">My Resume</a></li>
-			<li><a href="https://github.com/DavidAwad?tab=repositories" target="_blank">My Github</a></li>
-		</ul>
-	</nav>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
 
-	<main class="cd-content">
-		<!-- your content here -->
-		<div class="cd-intro">
-			<h1 id="title">404 Error</h1>
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/modernizr.custom.js"></script>
+
+  </head>
+
+  <body>
+
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+            <!-- TODO on every click, throw some new text using shoved id -->
+			<h1 id="shoved" class="logo"><a href="index.html#home">Oh hey!</a></h1>
+			<i class="fa fa-arrow-right menu-close"></i>
+			<a href="index.html">Home</a>
+			<a href="services.html">Resume</a>
+			<a href="portfolio.html">Medium</a>
+			<a href="about.html">Twitter</a>
+			<a href="#contact">Contact</a>
+
+            <!--
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-dribbble"></i></a>
+			<a href="#"><i class="fa fa-envelope"></i></a>
+            -->
+
 		</div>
 
-		<p id="para">
-			Sorry about that have a <a>resume</a>!
-		</p>
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="fa fa-bars"></i></div>
+	</nav>
+
+	<!-- MAIN IMAGE SECTION -->
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h1>404 Error</h1>
+					<h2>uhhh... Resume?</h2>
+					<div class="spacer"></div>
+					<i class="fa fa-angle-down"></i>
+				</div>
+			</div><!-- row -->
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+
+	<!-- WELCOME SECTION -->
+    <div class="container">
+      <div class="row mt">
+      	<div class="col-lg-8">
+	        <h1>I build websites & apps that people love!</h1>
+	        <p>I build everything, from hotwiring semi-automatic dart guns, to experiments with neural networks, to cross platform unittesting and brain wave detecting social networks.</p>
+      	</div>
+      	<div class="col-lg-4">
+      		<p class="pull-right">
+                <br>
+                <button type="button" class="btn btn-green">My GitHub</button>
+            </p>
+      	</div>
+      </div><!-- /row -->
+    </div><!-- /.container -->
 
 
-
-	</main> <!-- cd-content -->
-
-	<div class="cd-overlay-nav">
-		<span></span>
-	</div> <!-- cd-overlay-nav -->
-
-	<div class="cd-overlay-content">
-		<span></span>
-	</div> <!-- cd-overlay-content -->
-
-	<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
-
-<script src="404/js/jquery-2.1.1.js"></script>
-<script src="404/js/velocity.min.js"></script>
-<script src="404/js/main.js"></script> <!-- Resource jQuery -->
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+	<script src="assets/js/masonry.pkgd.min.js"></script>
+	<script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/classie.js"></script>
+	<script src="assets/js/AnimOnScroll.js"></script>
+	<script>
+		new AnimOnScroll( document.getElementById( 'grid' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+	</script>
+  </body>
 </html>
