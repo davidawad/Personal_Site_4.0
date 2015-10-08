@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the personal Site of David Awad, Engineer and Philosopher">
+    <meta name="description" content="Personal website of David Awad, Engineer and Philosopher">
     <meta name="author" content="David Awad">
 
-    <title>David Awad | Person </title>
+    <title>David Awad | Person</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
@@ -51,17 +51,35 @@
 
   <body>
 
+<!-- This section tag contains HTML Microdata for SEO... pay no mind! -->
+<section style="display:none" itemscope itemtype="http://schema.org/Person">
+	Hello, my name is
+	<span itemprop="name">Abanoub David Awad</span>,
+	I am a
+	<span itemprop="jobTitle">Computer Scientist and Physicist</span>
+	at the
+	<span itemprop="affiliation">Rutgers University MailChimp and SendGrid</span>.
+	My friends call me
+	<span itemprop="additionalName">David Awad</span>.
+	You can visit my homepage at
+	<a href="http://www.davidawad.com" itemprop="url">www.davidawad.com</a>.
+	<section itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		I live at
+		<span itemprop="addressLocality">Edison</span>,
+		<span itemprop="addressRegion">New Jersey</span>.
+	</section>
+</section>
+
 	<!-- Menu id="shoved" -->
 	<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
-            <!-- TODO on every click, throw some new text using shoved id -->
 			<h1 class="logo"><a id="catchyText" href="">Oh hey!</a></h1>
 
 			<i class="fa fa-arrow-right menu-close"></i>
 			<a href="index.html">Home</a>
 			<a href="https://medium.com/@Drepsi">Medium</a>
 			<a href="http://twitter.com/realdavidawad">Twitter</a>
-            <a href="assets/davidawad.pdf" target="_blank">Resume</a>
+            <a href="https://www.overleaf.com/docs/2265661nbzbpn/pdf.pdf" target="_blank">Resume</a>
 			<a href="mailto:contact@davidawad.com">Contact</a>
 
             <!--
@@ -187,28 +205,28 @@
 			</div>
 		</div> row -->
 
-<!-- Images and text for blog posts
+<!-- Images and text for blog posts -->
 		<div class="row mt">
 			<div class="col-lg-4">
 				<img class="img-responsive" src="assets/img/post01.jpg" alt="">
-				<h3><a href="https://yashi.com/press-release/yashi-leader-location-focused-video-advertising-sponsors-hacknjit-new-jersey-institute">I won a prize at HackNJIT</a></h3>
-				<p>It was the very first HackNJIT that I had attended where I had won a prize for my browser based bitcoin miner!</p>
-				<p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
+				<h3><a href="https://yashi.com/press-release/yashi-leader-location-focused-video-advertising-sponsors-hacknjit-new-jersey-institute">I was featured by Yashi</a></h3>
+				<p>At the very first HackNJIT that I had attended I was selected for Yashi's prize and I had also won second place overall for my browser based bitcoin miner!</p>
+				<p><a href="https://yashi.com/press-release/yashi-leader-location-focused-video-advertising-sponsors-hacknjit-new-jersey-institute"><i class="fa fa-link"></i> Read all about it</a></p>
 			</div>
 			<div class="col-lg-4">
-				<img class="img-responsive" src="assets/img/post02.jpg" alt="">
+				<img class="img-responsive" src="assets/img/hackru.png" alt="">
 				<h3><a href="#">I'm part of the HackRU organizing team</a></h3>
 				<p>We've had as many as 1,000 attendees at our previous hackRU and continue to thrive.</p>
-				<p><a href="http://hackru.org"><i class="fa fa-link"></i> Read More</a></p>
+				<p><a href="http://hackru.org"><i class="fa fa-link"></i> Come see what we're building</a></p>
 			</div>
 			<div class="col-lg-4">
-				<img class="img-responsive" src="assets/img/post03.jpg" alt="">
-				<h3><a href="#">We are an award winning design agency</a></h3>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				<p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
+				<img class="img-responsive" src="assets/img/kahnmath.jpg" alt="">
+				<h3><a href="https://medium.com/@Drepsi/a-short-proof-that-you-don-t-exist-734e2215cf51">A short proof that you don't exist</a></h3>
+				<p>I maintain a blog on contemporary philosophy, physics, and computer science for the average joe, I'd love your feedback!</p>
+				<p><a href="https://medium.com/@Drepsi"><i class="fa fa-link"></i> Help improve my thinking</a></p>
 			</div>
 		</div>
-	</div> container -->
+	</div> <!-- container -->
 
 
 	<!-- CLIENTS LOGOS
@@ -243,9 +261,9 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<p>
                         You've already seen what I can do in some of my projects above.
-                        Why not let me prove it? Just believe in me.
+                        Why not let me prove it to you?
                     </p>
-					<p><button class="btn btn-green btn-lg" href="assets/davidawad.pdf" target="_blank">Here's my resume</button></p>
+					<a class="btn btn-green btn-lg resButton" href="https://www.overleaf.com/docs/2265661nbzbpn/pdf.pdf" target="_blank"><p class="resButton">Here's my resume</p></a>
 				</div>
 			</div><!-- row -->
 		</div><!-- container -->
@@ -270,11 +288,13 @@
                 </p>
 
                 <p>
-                    All I know is that I want to do and create a lot more before I go. I want to change the world.
+                    All I know is that I want to do and create a lot more
+                    before I go. I want to change the world.
 
-                    "I can never read all the books I want; I can never be all the people I want and live all the lives I want. I can never train myself in all the skills I want. And what do I want? I want to live and feel all the shades, tones, and variations of mental and physical experience possible in my life. And I am horribly limited." - Sylvia Plath
-
-                    If you're thinking to contact me please feel free, It is a personal goal of mine to be someone who provides happiness, and support to as many people as I can in my small lifetime.
+                    If you're thinking to contact me please feel free,
+                    It is a personal goal of mine to be someone who provides
+                    happiness, and support to as many people as I can in my
+                    small lifetime. That's the dream.
                 </p>
 
                 <p>
@@ -332,8 +352,8 @@
 						United States.
 					</p>
 					<p>
-						P: +1-732-925-4874 <br/>
-						E: <a href="mailto:contact@davidawad.com">contact@davidawad.com</a>
+						Phone: +1-732-925-4874 <br/>
+						Email: <a href="mailto:contact@davidawad.com">contact@davidawad.com</a>
 					</p>
 					<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
 				</div><!--col-lg-4-->
@@ -359,7 +379,7 @@
 			viewportFactor : 0.2
 		} );
 	</script>
-	
+
 	<script>
 		   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

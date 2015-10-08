@@ -556,3 +556,7 @@ hr {
     opacity: 1;
 }
 }
+
+.resButton{
+    margin-bottom: 0 !important ;
+}
