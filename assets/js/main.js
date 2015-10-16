@@ -23,7 +23,7 @@
 			// Menu settings
 			$('#menuToggle, .menu-close').on('click', function(){
 				// generate random number for new catchy line from array
-				var newTag = Math.round( Math.random() * catchy.length ) - 1 ;
+				var newTag = Math.floor( Math.random() * catchy.length ) ;
 				document.getElementById("catchyText").innerHTML = catchy[newTag];
 				document.getElementById("smallTitle").innerHTML = catchy[newTag];
 
