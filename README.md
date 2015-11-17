@@ -1,7 +1,6 @@
 ## This is my new personal website
 
-
-Let's be honest with ourselves, this is a template, but it looks fantastic.
+This is actually just a heavily modified template, but it looks fantastic.
 
 
 Cheers! 
