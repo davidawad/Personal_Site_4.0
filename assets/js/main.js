@@ -14,9 +14,9 @@
 					"Cool person, at time of writing",
 					"bam.",
 					"I'm Obamaself",
-					"former sperm racing champion",
 					"Pretentious? Moi?",
-					"eats rappers for breakfast"
+					"eats rappers for breakfast",
+					"recovering lawyer"
 				];
 
 
