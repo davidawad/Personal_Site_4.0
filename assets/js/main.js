@@ -16,7 +16,8 @@
 					"I'm Obamaself",
 					"Pretentious? Moi?",
 					"eats rappers for breakfast",
-					"recovering lawyer"
+					"recovering lawyer",
+                    "proof that one can in fact, live off of Taco Bell"
 				];
 
 
