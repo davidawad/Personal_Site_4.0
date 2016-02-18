@@ -1,0 +1,6 @@
+.full-avatar{
+    border-radius: 100%;
+    max-width: 225px;
+    width: 100%;
+    margin: 0 auto 4rem;
+}
