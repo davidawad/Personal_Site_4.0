@@ -1,0 +1,35 @@
+{
+  "name": "davidawad.github.io",
+  "homepage": "https://github.com/davidawad/davidawad.github.io",
+  "authors": [
+    "David Awad <davidawad64@gmail.com>"
+  ],
+  "description": "personal site",
+  "main": "index.html",
+  "keywords": [
+    "david",
+    "awad",
+    "developer",
+    "engineer",
+    "designer",
+    "physicist",
+    "artist",
+    "philosopher"
+  ],
+  "license": "GNU",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "masonry": "^4.1.1",
+    "classie": "^1.0.1"
+  }
+}
