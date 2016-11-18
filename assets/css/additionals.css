@@ -4,3 +4,11 @@
     width: 100%;
     margin: 0 auto 4rem;
 }
+
+.white-bg {
+    background-color: #FFFFFF;
+}
+
+.ama-bg{
+    background-color: #241F20 !important;
+}

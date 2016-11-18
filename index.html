@@ -28,13 +28,15 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- <link href="assets/css/bootstrap.css" rel="stylesheet"> -->
+    <link href="assets/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
 
     <!-- Font Awesome, loaded as lazily as possible -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link href="assets/components/components-font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Additional styles -->
     <link href="assets/css/additionals.css" rel="stylesheet">
@@ -43,36 +45,28 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+    </head>
 
-    <script src="assets/js/modernizr.custom.js"></script>
+    <body>
 
-  </head>
-
-  <body>
-
-<!-- This section tag contains HTML Microdata for SEO... pay no mind! -->
-<section style="display:none" itemscope itemtype="http://schema.org/Person">
-	Hello, my name is
-	<span itemprop="name">David Awad</span>,
-	I am a
-	<span itemprop="jobTitle">Computer Scientist and Physicist</span>
-	at the
-	<span itemprop="affiliation">Rutgers University MailChimp and SendGrid</span>.
-	My friends call me
-	<span itemprop="additionalName">Abanoub David Awad</span>.
-	You can visit my homepage at
-	<a href="http://www.davidawad.com" itemprop="url">www.davidawad.com</a>.
-	<section itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-		I live at
-		<span itemprop="addressLocality">Edison</span>,
-		<span itemprop="addressRegion">New Jersey</span>.
-	</section>
-</section>
+    <!-- This section tag contains HTML Microdata for SEO... pay no mind! -->
+    <section style="display:none" itemscope itemtype="http://schema.org/Person">
+    	Hello, my name is
+    	<span itemprop="name">David Awad</span>,
+    	I am a
+    	<span itemprop="jobTitle">Computer Scientist and Physicist</span>
+    	at the
+    	<span itemprop="affiliation">Rutgers University, MailChimp, Tumblr, MLH, and SendGrid</span>.
+    	My friends call me
+    	<span itemprop="additionalName">Abanoub David Awad</span>.
+    	You can visit my homepage at
+    	<a href="http://www.davidawad.com" itemprop="url">www.davidawad.com</a>.
+    	<section itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    		I live at
+    		<span itemprop="addressLocality">Edison</span>,
+    		<span itemprop="addressRegion">New Jersey</span>.
+    	</section>
+    </section>
 
 	<!-- Menu id="shoved" -->
 	<nav class="menu" id="theMenu">
@@ -108,8 +102,6 @@
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
 
-
-
     <!-- CALL TO ACTION -->
 	<div id="call">
 		<div class="container">
@@ -118,31 +110,28 @@
                 <br>
 
                 <div class="col-2">
-                    <img src="assets/img/david-painted-1.jpg" class="full-avatar">
+                    <img src="assets/img/awad_portraits/dawad_portrait_2.jpg" class="full-avatar" id="portrait">
                 </div>
 
 				<div class="col-8">
-                    <h3>David Awad (<a href="">day-vid uhh wad</a>)</h3>
+                    <h3>Abanoub David Awad <h3>
+                    <!-- Awad => عوض -->
+                    <h3>(<a href="http://www.babynamewizard.com/baby-name/boy/abanoub">ehh-behh-noob 'deivid uhh-wad</a>)</h3>
 					<p>
                         A multi-disciplinary Engineer, and accidental philosopher, hoping to do what little I can with what little I have.
-                        </p>
+                    </p>
 				</div>
-
 			</div><!-- row -->
 		</div><!-- container -->
 	</div><!-- Call to action -->
-
-
-
-
 
 	<!-- WELCOME SECTION -->
     <div class="container">
       <div class="row mt">
       	<div class="col-lg-8">
-	        <h1>I build websites & apps that people love!</h1>
+	        <h1>I build websites, devices, games and apps that people love!</h1>
 	        <p>I build everything, from hotwiring semi-automatic dart guns, to generating poetry,
-                 to cross platform unittesting and brain wave detecting social networks. Not to mention it's all free.</p>
+                 to cross platform unit testing and brain wave detecting social networks. And I give it away for free.</p>
       	</div>
       	<div class="col-lg-4">
       		<p class="pull-right">
@@ -158,6 +147,7 @@
     	<div class="container"
 	    	<div class="row mt">
 				<ul class="grid effect-2" id="grid">
+                    <li><a href="https://github.com/DavidAwad/pebbledex"><img src="assets/img/projects/pebbledex.jpg"></a></li>
 					<li><a href="https://github.com/DavidAwad/insightweets"><img src="assets/img/projects/insightweets.png"></a></li>
 					<li><a href="https://github.com/DavidAwad/Read-Between-The-Lines"><img src="assets/img/projects/read between the lines.png"></a></li>
 					<li><a href="https://github.com/DavidAwad/hi.rd"><img src="assets/img/projects/Hi.rd.png"></a></li>
@@ -177,46 +167,32 @@
 	    </div><!-- container -->
     </div><!-- portfolio -->
 
-
-	<!-- SERVICES SECTION -->
-	<div id="services">
+    <!-- COMPANY LOGOS -->
+	<div id="lg">
 		<div class="container">
-			<div class="row mt">
-				<div class="col-lg-1 centered">
-					<i class="fa fa-quote-right"></i>
+			<div class="row centered">
+				<div class="col-lg-2 col-lg-offset-1">
+					<img src="assets/img/companies/tumblr.png" alt="tumblr" class="img-responsive">
 				</div>
-				<div class="col-lg-3">
-					<h3>My motivation</h3>
-					<p>“I can never read all the books I want; I can never be all the people I want and live all the lives I want. I can never train myself in all the skills I want. And what do I want? I want to live and feel all the shades, tones, and variations of mental and physical experience possible in my life. And I am horribly limited.” - Sylvia Plath
-                    </p>
+				<div class="col-lg-2">
+					<img src="assets/img/companies/mlh.png" alt="mlh" class="img-responsive">
 				</div>
-
-				<div class="col-lg-1 centered">
-					<i class="fa fa-laptop"></i>
+				<div class="col-lg-2">
+					<!-- "you?" whack.
+                    <img src="assets/img/companies/codecamemy.png" alt="codecademy">
+                    -->
 				</div>
-				<div class="col-lg-3">
-					<h3>Why Computer Science?</h3>
-					<p>“What's in your hands I think and hope is intelligence: the ability to see the machine as more than when you were first led up to it that you can make it more.” - Alan J. Perlis
-                    </p>
+				<div class="col-lg-2">
+					<img src="assets/img/companies/sendgrid.png" alt="" class="img-responsive">
 				</div>
-
-
-				<div class="col-lg-1 centered">
-					<i class="fa fa-puzzle-piece"></i>
+				<div class="col-lg-2">
+					<img src="assets/img/companies/mailchimp.png" alt="" class="img-responsive">
 				</div>
-				<div class="col-lg-3">
-					<h3>Why Physics</h3>
-					<p>“The important thing is to not stop questioning. Curiosity has its own reason for existence. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day.” - Albert Einstein
-                    </p>
-				</div>
+			</div>
+		</div>
+	</div>
 
-			</div><!-- row -->
-		</div><!-- container -->
-	</div><!-- services section -->
-
-
-	<!-- BLOG POSTS -->
-
+    <!-- BLOG POSTS -->
 	<div class="container">
 		<div class="row mt">
 			<div class="col-lg-12">
@@ -253,44 +229,48 @@
 		</div>
 	</div> <!-- container -->
 
+	<!-- SERVICES SECTION -->
+    <div class="white-bg">
+    	<div class="container">
+            <div class="row">
+    			<div class="col-lg-4">
+                    <img src="assets/img/mountains.png" alt="astronauts" class="img-responsive">
+    			</div>
 
-	<!-- CLIENTS LOGOS
-	<div id="lg">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-2 col-lg-offset-1">
-					<img src="assets/img/clients/c01.gif" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="assets/img/clients/c02.gif" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="assets/img/clients/c03.gif" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="assets/img/clients/c04.gif" alt="">
-				</div>
-				<div class="col-lg-2">
-					<img src="assets/img/clients/c05.gif" alt="">
-				</div>
-			</div>
-		</div>
-	</div> -->
+    			<div class="col-lg-8">
+    				<h3><b>Why Computer Science?</b>  <i class="fa fa-code-fork" aria-hidden="true"></i></h3>
+    				<p>“What's in your hands I think and hope is intelligence: the ability to see the machine as more than when you were first led up to it that you can make it more.” - Alan J. Perlis
+                    </p>
+    			</div>
+            </div><!-- row -->
 
+            <div class="row">
+    			<div class="col-lg-8">
+    				<h3><b>Why Physics?</b> <i class="fa fa-eercast" aria-hidden="true"></i></h3>
+    				<p>
+                        I've always been fascinated by the the magic of reality and how we manipulate it for the better.
+                        There is so much waiting for me to learn about
+                    </p>
+    			</div>
+
+                <div class="col-lg-4">
+                    <img src="assets/img/spaceman_trophy.gif" alt="astronauts" class="img-responsive">
+    			</div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </div> <!-- white-bg -->
 
 	<!-- CALL TO ACTION -->
-	<div id="call">
+	<div id="call" class="ama-bg">
 		<div class="container">
 			<div class="row">
-				<h3>I WRITE A LOT OF CODE</h3>
-				<div class="col-lg-8 col-lg-offset-2">
-					<p>
-                        You've already seen what I can do in some of my projects above.
-                        Why not let me prove it to you?
-                    </p>
-					<a class="btn btn-green btn-lg resButton" href="assets/davidawad.pdf" target="_blank"><p class="resButton">Here's my resume</p></a>
-				</div>
-			</div><!-- row -->
+                    <img src="assets/img/reddit-ama.gif" alt="Ask Me Anything" class="img-responsive">
+            </div>
+
+            <div class="row">
+					<p> Please do feel free to reach out and to ask me anything if you have any questions!</p>
+					<!-- <a class="btn btn-green btn-lg resButton" href="assets/davidawad.pdf" target="_blank"><p class="resButton">Here's my resume</p></a> -->
+			</div>
 		</div><!-- container -->
 	</div><!-- Call to action -->
 
@@ -341,26 +321,33 @@
 	<div id="sf">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 dg">
+				<div class="col-lg-3 dg">
 					<h4 class="ml">Facebook</h4>
-					<p class="centered"><a href="http://facebook.com/david.a.awad"><i class="fa fa-facebook"></i></a></p>
+					<p class="centered"><a href="http://facebook.com/wavtheory"><i class="fa fa-facebook"></i></a></p>
 					<a href="http://facebook.com/david.a.awad"><p class="ml"> Let's be friends</p></a>
 				</div>
-				<div class="col-lg-4 lg">
+				<div class="col-lg-3 lg">
 					<h4 class="ml">Twitter</h4>
 					<p class="centered"><a href="http://twitter.com/realdavidawad"><i class="fa fa-twitter"></i></a></p>
 					<a href="http://twitter.com/realdavidawad"><p class="ml"> Follow Me @RealDavidAwad</p></a>
 				</div>
-				<div class="col-lg-4 dg">
+				<div class="col-lg-3 dg">
 					<h4 class="ml">Medium</h4>
 					<p class="centered"><a href="https://medium.com/@wav_theory"><i class="fa fa-medium"></i></a></p>
 					<a href="https://medium.com/@wav_theory"><p class="ml"> I'm on Medium</p></a>
 				</div>
+
+                <div class="col-lg-3 lg">
+					<h4 class="ml">Email</h4>
+					<p class="centered"><a href="mailto:contact@davidawad.com"><i class="fa fa-envelope-o"></i></a></p>
+					<a href="mailto:contact@davidawad.com"><p class="ml">Of course email too ~</p></a>
+				</div>
+
 			</div><!-- row -->
 		</div><!-- container -->
 	</div><!-- Social Footer -->
 
-	<!-- CONTACT FOOTER --->
+	<!-- GOODBYE FOOTER
 	<div id="cf">
 		<div class="container">
 			<div class="row">
@@ -368,32 +355,43 @@
 		        	<div id="mapwrap">
                         <iframe height="400" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=40.5381495,-74.3780251&amp;spn=67.34552,156.972656&amp;z=6&amp;output=embed"></iframe>
 					</div>
-				</div><!--col-lg-8-->
+				</div>
 				<div class="col-lg-4">
                     <h4> <br/>Contact Me!</h4>
 					<br>
 					<p>
 						Email: <a href="mailto:contact@davidawad.com">contact@davidawad.com</a>
 					</p>
-					<!-- <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p> -->
-				</div><!--col-lg-4-->
-			</div><!-- row -->
-		</div><!-- container -->
-	</div><!-- Contact Footer -->
+					<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    Contact Footer -->
 
 
-    	<!-- Bootstrap core JavaScript
-    	================================================== -->
-    	<!-- Placed at the end of the document so the pages load faster -->
-    	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    	<script src="assets/js/bootstrap.min.js"></script>
-    	<script src="assets/js/main.js"></script>
-	<script src="assets/js/masonry.pkgd.min.js"></script>
-	<script src="assets/js/imagesloaded.js"></script>
-	<script src="assets/js/classie.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/components/jquery/dist/jquery.min.js"></script>
+    <script src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/components/classie/classie.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
 	<script src="assets/js/AnimOnScroll.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/modernizr.custom.js"></script>
+
+
 	<script>
-		new AnimOnScroll( document.getElementById( 'grid' ), {
+		new AnimOnScroll( document.getElementById('grid'), {
 			minDuration : 0.4,
 			maxDuration : 0.7,
 			viewportFactor : 0.2
@@ -408,3 +406,12 @@
 	</script>
   </body>
 </html>
+
+<!--
+Img Resources Used from Dribble:
+https://dribbble.com/shots/2569130-Something-went-wrong
+https://dribbble.com/shots/1446794-In-space-no-one-can-hear-you-cry
+https://dribbble.com/shots/2279115-Reddit-AMA-logo-intro
+hackaday.com
+opensource.com
+-->
