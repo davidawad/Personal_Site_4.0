@@ -43,6 +43,7 @@
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,300,700' rel='stylesheet' type='text/css'>
 
     </head>
 
@@ -50,21 +51,28 @@
 
     <!-- This section tag contains HTML Microdata for SEO... pay no mind! -->
     <section style="display:none" itemscope itemtype="http://schema.org/Person">
-    	Hello, my name is
     	<span itemprop="name">David Awad</span>,
-    	I am a
+        <img src="assets/img/awad_portraits/painted_final.gif" itemprop="image" alt="Painting of David Awad"/>
     	<span itemprop="jobTitle">Computer Scientist and Physicist</span>
-    	at the
     	<span itemprop="affiliation">Rutgers University, MailChimp, Tumblr, MLH, and SendGrid</span>.
-    	My friends call me
     	<span itemprop="additionalName">Abanoub David Awad</span>.
-    	You can visit my homepage at
     	<a href="http://www.davidawad.com" itemprop="url">www.davidawad.com</a>.
+
+          <a href="mailto:contact@davidawad.com" itemprop="email">contact@davidawad.com</a>
+          <a href="mailto:david@awad.io" itemprop="email">david@awad.io</a>
+
     	<section itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-    		I live at
+
     		<span itemprop="addressLocality">Edison</span>,
     		<span itemprop="addressRegion">New Jersey</span>.
+            <span itemprop="postalCode">08817</span>
     	</section>
+        <span itemprop="sponsor" itemtype="http://schema.org/Organization">
+        <a itemprop="url" href="computability.solutions">Sky</a></span>
+
+        <span itemprop="disambiguatingDescription">Coolest guy ever to walk the earth. Hilarous comedian as well.</span>
+
+
     </section>
 
 	<!-- Menu id="shoved" -->
@@ -80,7 +88,7 @@
             <a href="http://github.com/davidawad">GitHub</a>
 			<a href="https://angel.co/davidawad">AngelList</a>
 			<a href="https://linkedin.com/in/davidawad64">Linkedin</a>
-            <!-- <a href="https://linkedin.com/in/davidawad64">dribbble</a> -->
+            <!-- <a href="https://dribbble.com/davidawad?">dribbble</a> -->
             <a href="papers.html" target="_blank">Papers</a>
             <a href="assets/davidawad.pdf" target="_blank">Resume</a>
 			<a href="mailto:contact@davidawad.com">Contact</a>
@@ -98,7 +106,10 @@
             </div>
 
             <div class="col-lg-8">
-                <h1>David</h1>
+                <h1 class="main-name">David Awad</h1>
+                <br>
+                <br>
+                <br>
                 <h2 id="smallTitle">Cool, at time of writing</h2>
                 <div class="spacer"></div>
                 <i class="fa fa-angle-down"></i>
@@ -117,16 +128,18 @@
                 <br>
 
                 <div class="col-2">
-                    <img src="assets/img/awad_portraits/dawad_portrait_2.jpg" class="full-avatar" id="portrait">
+                    <!-- <img src="assets/img/awad_portraits/dawad_portrait_2.jpg" class="full-avatar" id="portrait"> -->
+
+                    <img src="assets/img/awad_portraits/painted_final.gif" class="full-avatar" id="portrait">
+
                 </div>
 
 				<div class="col-8">
-                    <h3>Abanoub David Awad <h3>
-                    <!-- Awad => عوض -->
+                    <h3>Abanoub David Awad<h3>
+                    <h3>داوأ ديفيد بونابأ<h3>
+
                     <h3>(<a href="http://www.babynamewizard.com/baby-name/boy/abanoub">ehh-behh-noob 'deivid uhh-wad</a>)</h3>
-					<p>
-                        A multi-disciplinary Engineer, and accidental philosopher, hoping to do what little I can with what little I have.
-                    </p>
+					<p> A multi-disciplinary engineer, and accidental philosopher, hoping to do what little I can with what little I have. </p>
 				</div>
 
                 <div class="col-2">
@@ -155,7 +168,7 @@
 
     <!-- PORTFOLIO SECTION -->
     <div id="portfolio">
-    	<div class="container"
+        <div class="container">
 	    	<div class="row mt">
 				<ul class="grid effect-2" id="grid">
                     <li><a href="https://github.com/DavidAwad/pebbledex"><img src="assets/img/projects/pebbledex.jpg"></a></li>
@@ -182,6 +195,8 @@
 	<div id="lg">
 		<div class="container">
 			<div class="row centered">
+				<div class="col-lg-1"></div>
+
 				<div class="col-lg-2">
 					<img src="assets/img/companies/tumblr.png" alt="tumblr" class="img-responsive">
 				</div>
@@ -189,9 +204,7 @@
 					<img src="assets/img/companies/mlh.png" alt="mlh" class="img-responsive">
 				</div>
 				<div class="col-lg-2">
-					<!-- "you?" whack.
-                    <img src="assets/img/companies/codecamemy.png" alt="codecademy">
-                    -->
+                    <img src="assets/img/companies/codecademy.png" alt="codecademy", class="img-responsive">
 				</div>
 				<div class="col-lg-2">
 					<img src="assets/img/companies/sendgrid.png" alt="" class="img-responsive">
@@ -200,8 +213,7 @@
 					<img src="assets/img/companies/mailchimp.png" alt="" class="img-responsive">
 				</div>
 
-				<div class="col-lg-2">
-				</div>
+				<div class="col-lg-1"></div>
 
             </div>
 		</div>
@@ -214,10 +226,10 @@
 				<h1>Recent Posts</h1>
 			</div>
 			<div class="col-lg-8">
-				<p>I maintain a Medium blog about Philosophy, Computer Science, Mathematics, Physics</p>
+				<p>I maintain a Medium blog about Philosophy, Computer Science, Mathematics, and Physics</p>
 			</div>
 			<div class="col-lg-4 goright">
-				<p><a href="https://medium.com/@Drepsi"><i class="fa fa-angle-right"></i> That sounds cool</a></p>
+				<p><a href="https://medium.com/why-things-matter"><i class="fa fa-angle-right"></i> That sounds cool</a></p>
 			</div>
 		</div>
 
@@ -237,9 +249,9 @@
 			</div>
 			<div class="col-lg-4">
 				<img class="img-responsive" src="assets/img/kahnmath.jpg" alt="">
-				<h3><a href="https://medium.com/@wav_theory/a-short-proof-that-you-don-t-exist-734e2215cf51">A short proof that you don't exist</a></h3>
+				<h3><a href="https://medium.com/why-things-matter/a-short-proof-that-you-don-t-exist-734e2215cf51">A short proof that you don't exist</a></h3>
 				<p>I maintain a blog on contemporary philosophy, physics, and computer science for the average joe, I'd love your feedback!</p>
-				<p><a href="https://medium.com/@wav_theory"><i class="fa fa-link"></i> Help improve my thinking</a></p>
+				<p><a href="https://medium.com/why-things-matter"><i class="fa fa-link"></i> Help improve my thinking</a></p>
 			</div>
 		</div>
 	</div> <!-- container -->
@@ -309,7 +321,7 @@
         </div><!-- container -->
     </div> <!-- white-bg -->
 
-	<!-- CALL TO ACTION -->
+	<!-- CALL TO ACTION
 	<div id="call" class="ama-bg">
 		<div class="container">
             <div class="center">
@@ -319,11 +331,11 @@
 
                 <div class="row">
     					<p> Please do feel free to reach out and to ask me anything if you have any questions!</p>
-    					<!-- <a class="btn btn-green btn-lg resButton" href="assets/davidawad.pdf" target="_blank"><p class="resButton">Here's my resume</p></a> -->
+    					<a class="btn btn-green btn-lg resButton" href="assets/davidawad.pdf" target="_blank"><p class="resButton">Here's my resume</p></a>
     			</div>
 		    </div>
-        </div><!-- container -->
-	</div><!-- Call to action -->
+        </div>
+	</div> Call to action -->
 
 	<div class="container">
 		<div class="row mt">

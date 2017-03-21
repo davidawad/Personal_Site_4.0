@@ -1,3 +1,12 @@
+.main-name {
+    font-family: "Playfair Display";
+    color: #1D2731;
+}
+
+#smallTitle {
+    color: #ffffff; 
+}
+
 .full-avatar{
     border-radius: 100%;
     max-width: 225px;

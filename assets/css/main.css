@@ -1,3 +1,15 @@
+/* Color Palette
+
+Prussian Blue   #0B3C5D    
+Sky Blue        #328CC1
+Gold Leaf       #D9B310
+Ivory Black     #1D2731
+
+
+green accent #16a085
+*/
+
+
 html, body {
     margin: 0;
     height: 100%;
@@ -5,7 +17,7 @@ html, body {
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
     font-family: Lato;
     font-weight: 300;
     font-size: 16px;
@@ -34,7 +46,7 @@ p {
     padding-top: 25px;
 }
 a {
-    color: #16a085;
+    color: #328CC1;
     word-wrap: break-word;
     -webkit-transition: color .1s ease-in, background .1s ease-in;
     -moz-transition: color .1s ease-in, background .1s ease-in;
@@ -67,14 +79,14 @@ hr {
 }
 .btn-green {
     color: #fff;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
+    background-color: #D9B310;
+    border-color: #D9B310;
     font-weight: 300;
 }
 .btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
     color: #fff;
-    background-color: #16a085;
-    border-color: #16a085;
+    background-color: #328CC1;
+    border-color: #328CC1;
     font-weight: 300;
 }
 .tm {
@@ -97,7 +109,7 @@ hr {
     position: absolute;
     top: 0;
     left: 60px;
-    background: #1a1a1a;
+    background: #1D2731;
     width: 200px;
     height: 100%}
 .menu h1.logo a {
@@ -111,7 +123,7 @@ hr {
     margin-top: 20px;
 }
 .menu h1.logo a:hover {
-    color: #1abc9c;
+    color: #D9B310;
 }
 .menu img.logo {
     margin: 20px 0;
@@ -237,13 +249,11 @@ hr {
 }
 #headerwrap h1 {
     margin-top: 130px;
-    color: #fff;
     font-size: 140px;
     font-weight: 700;
     letter-spacing: 3px;
 }
 #headerwrap h2 {
-    color: #fff;
     font-size: 50px;
     font-weight: 100;
     letter-spacing: 2px;
@@ -363,7 +373,7 @@ hr {
 #portfolio {
     width: 100%}
 #services {
-    background: #1abc9c;
+    background: #D9B310;
     margin-top: 25px;
     padding-top: 35px;
     padding-bottom: 35px;
@@ -389,7 +399,7 @@ hr {
     text-align: left;
 }
 #call {
-    background: #2f2f2f;
+    background: #1D2731;
     padding-top: 35px;
     padding-bottom: 35px;
     text-align: center;
@@ -410,10 +420,10 @@ hr {
     padding: 15px;
 }
 #sf .lg {
-    background-color: #1abc9c;
+    background-color: #D9B310;
 }
 #sf .dg {
-    background-color: #16a085;
+    background-color: #328CC1;
 }
 #sf h4 {
     color: #fff;
