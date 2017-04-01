@@ -1,5 +1,10 @@
 ;(function(){
 
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+        $('html').css('width', width);
+
+
 
 		var catchy = ["Oh hey",
 					"yolo",
