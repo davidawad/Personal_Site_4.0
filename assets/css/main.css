@@ -5,8 +5,6 @@ Sky Blue        #328CC1
 Gold Leaf       #D9B310
 Ivory Black     #1D2731
 
-
-green accent #16a085
 */
 
 
@@ -15,13 +13,11 @@ html, body {
     height: 100%;
     min-height: 100%;
 }
-
 body {
     background-color: #f4f4f4;
-    font-family: Lato;
+    width: 100%;
     font-weight: 300;
     font-size: 16px;
-    width: 100%;
     color: #555;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -184,12 +180,6 @@ hr {
     overflow-x: hidden;
     position: relative;
     left: 0;
-}
-.body-push-toright {
-    left: 200px;
-}
-.body-push-toleft {
-    left: -200px;
 }
 .menu, .body-push {
     -webkit-transition: all .3s ease;
