@@ -4,8 +4,7 @@
         // TODO do this on device resize
         var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-        $('html').css('width', width);
-
+        $('html').css('width', width + 'px');
 
 
 		var catchy = ["Oh hey",
