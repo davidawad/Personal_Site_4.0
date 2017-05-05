@@ -1,13 +1,12 @@
-## This is my new personal website
-
-This is actually just a heavily modified template, but it looks fantastic.
-
+## This is my personal website
 
 Cheers! 
 
 ## Installation
+From a terminal you can run the following. 
 ```
 bower install
+open ./index.html
 ```
 
-###### :D
+###### </> with <3 
